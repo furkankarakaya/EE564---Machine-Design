@@ -2,6 +2,7 @@ clear all
 % Initial Points
 Idc = 4;
 Perm0 = 4*pi*1e-7;
+RelatPermCore = 125;
 
 % Core Specs
 % Link: https://www.mag-inc.com/Media/Magnetics/Datasheets/0077620A7.pdf
@@ -12,19 +13,53 @@ Length = 144e-3;
 Area = 360e-6;
 Height = 25e-3;
 
-%AmperTurn vs AL fit parameters
-p1 = -0.4457;
-p2 = 400.6; %% AL(nH/T^2) = p1*AT + p2; Perm = Length*(p1*AT+p2)*1e-9/Area
+%Initial Permeability vs AmperTurn/cm fit parameters
+a = 1.414e-2;
+b = 2.851e-2;
+c = 1.135e-3;
+d = 7.55e-2;
+e = 1.088e-3;
+x = 1.274;
+%B = ((a + b*H + c*H^2)/(1 + d*H + e*H^2))^x;
 %Calculations
 HomogReluct = 1e9/AL; % Homogenous Reluctance
 Perm = Length/(HomogReluct*Area);
 RelatPerm = Perm/Perm0;
-AL_zerocurr = p1*0 + p2;
-AL_limit = 0.8*AL_zerocurr; % 80% is the limit for saturation begin
-AT_limit = (AL_limit - p2)/p1;
 N_limit = round(AT_limit/Idc);
 
+%% Core Graph
+j = 0;
+for NI = 15:1:800
+    j = j + 1;
+    H(j) = NI/(Length*100);
+    B(j) = ((a + b*H(j) + c*H(j)^2)/(1 + d*H(j) + e*H(j)^2))^x;
+    RelPerm (j) = (B(j)/(H(j)*100))/Perm0;
+end
+f3 = figure;
+hold all
+grid on
+ax = gca;
+title('B vs H curve','FontSize',12,'FontWeight','bold','Color','k');
+xlabel('H(AT/cm)','FontSize',12,'FontWeight','bold','Color','k');
+ylabel('B(T)','FontSize',12,'FontWeight','bold','Color','k');
+ax.FontSize = 12;
+%ax.XTick = [t1:0.1e-7:t2];
+plot(H, B,'LineWidth',3.0,'Color','r');
+hold off
+saveas(f3, 'B vs H.jpg');
 
+f4 = figure;
+hold all
+grid on
+ax = gca;
+title('Relative Permeability vs H curve','FontSize',12,'FontWeight','bold','Color','k');
+xlabel('H(AT/cm)','FontSize',12,'FontWeight','bold','Color','k');
+ylabel('\mu_r','FontSize',12,'FontWeight','bold','Color','k');
+ax.FontSize = 12;
+%ax.XTick = [t1:0.1e-7:t2];
+plot(H, RelPerm,'LineWidth',3.0,'Color','r');
+hold off
+saveas(f4, 'Relative Permeability vs H.jpg');
 %% Linear Core
 % Homogenous
 j = 0;
