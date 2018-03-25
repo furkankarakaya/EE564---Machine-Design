@@ -233,10 +233,10 @@ saveas(f2, 'Inductance vs Current.jpg');
 
 %% Gapped Core
 %No fringing
-TotReluct = (Length - 2e-3)/(Perm*Area) + (2e-3)/(Perm0*Area);
+TotReluct = (Length - 2e-3)/(Perm0*110*Area) + (2e-3)/(Perm0*Area);
 Ind_GapNoFring = N_limit.^2/TotReluct;
 %Fringing Exists
 % The method seen in the Mohan's book Ch.30 p.758 is applied
 AreaGap = Height * ((OD - ID)/2 + 2e-3);
-TotReluct = (Length - 2e-3)/(Perm*Area) + (2e-3)/(Perm0*AreaGap);
+TotReluct = (Length - 2e-3)/(Perm0*110*Area) + (2e-3)/(Perm0*AreaGap);
 Ind_GapFringExis = N_limit.^2/TotReluct;
