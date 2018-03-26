@@ -1,0 +1,142 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002018, month=000000000003, day=000000000025, hour=000000000017, min=000000000053, sec=000000000037)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000003979, lin=000000000121, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock22'
+	SolutionName='LastAdaptive'
+	SolutionID=52
+	V=222
+	$begin 'States'
+		F(VID=54, Ver=222)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'Fields'
+		IDDblMap(89, -1)
+		$begin 'DataMap'
+			VID=54
+			Ver=222
+			Field(DblID=89, Dir='DV54_SOL52_V222.Field89/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock22'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=50, Instance=\'\', Solution=-3, VersionID=122)'='SolutionBlock12'
+	'SolutionKey(SimSetup=50, Instance=\'SetupDefinition\', Solution=-1, VersionID=122)'='SolutionBlock11'
+	'SolutionKey(SimSetup=50, Instance=\'SolutionDefinition\', Solution=51, VersionID=222)'='SolutionBlock21'
+	'SolutionKey(SimSetup=50, Instance=\'SolutionDefinition\', Solution=52, VersionID=222)'='SolutionBlock22'
+$end 'BlockMapName'
+$begin 'SolutionBlock21'
+	SolutionName='AdaptivePass'
+	SolutionID=51
+	V=222
+	$begin 'States'
+		F(VID=54, Ver=222)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'NFSP'
+		$begin 'SubData'
+			ID=10
+			NFSP(VID=54, Ver=222, File='DV54_SOL51_NFSP10_V222.sd')
+		$end 'SubData'
+	$end 'NFSP'
+$end 'SolutionBlock21'
+$begin 'SolutionBlock11'
+	SimSetupID=50
+	SimSetupName='Setup1'
+	VersionID=122
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		IDDblMap(87, 1, 90, 2, 91, 3, 92, 4, 185, 5, 203, 6, 221, 7, 239, 8)
+		$begin 'DataMap'
+			VID=54
+			Ver=122
+			M(DblID=221, Dir='DV54_S50_V122.cmesh221/')
+			M(DblID=239, Dir='DV54_S50_V122.cmesh239/')
+		$end 'DataMap'
+	$end 'CurrMeshes'
+	$begin 'MeshOps'
+		OPS(VID=54, Ver=122, ID=1)
+	$end 'MeshOps'
+	$begin 'LastPassNumbers'
+		LP(VID=54, Ver=122, P=7)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=54, Ver=122, File='DV54_S50_V122.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=54, Ver=122, Dir='DV54_S50_MI0_V122.sd/')
+		$end 'SubData'
+	$end 'MI'
+	$begin 'MeshGeomInfo'
+		MGI(VID=54, Ver=122, Dir='DV54_S50_V122_MGI/')
+	$end 'MeshGeomInfo'
+$end 'SolutionBlock11'
+$begin 'SolutionBlock12'
+	ConvSetupName='eConv'
+	MaxPasses='10'
+	MinPasses='2'
+	ConvTarget='(1, 1)'
+	ConvTargetConsecPasses='N/A'
+	ConvCurrentConsecPasses='N/A'
+	c(tri=10754, p=1, de_ee='(0.040213, N/A)', ee=0.04021267173237914, te=0.0708464391207589)
+	c(tri=14010, p=2, de_ee='(0.021808, 2.7092)', ee=0.02180801068031675, de=2.709150111933445, te=0.0727657755054998)
+	c(tri=18214, p=3, de_ee='(0.0098779, 2.5558)', ee=0.009877930788435711, de=2.555836369738219, te=0.07090600135040817)
+	c(tri=23680, p=4, de_ee='(0.007259, 2.666)', ee=0.007258968025609386, de=2.666001534153509, te=0.07279635643421696)
+	c(tri=30784, p=5, de_ee='(0.003554, 2.5752)', ee=0.003553978734955311, de=2.575176576201906, te=0.07092172171499456)
+	c(tri=40020, p=6, de_ee='(0.0028164, 2.659)', ee=0.002816372307089925, de=2.658975716404358, te=0.07280751307305214)
+	c(tri=52026, p=7, de_ee='(0.0012572, 0.0028259)', ee=0.001257225694695443, de=0.00282594014589873, te=0.0728095705697933)
+$end 'SolutionBlock12'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='Maxwell2DDesign2'
+	VersionID=49
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=240
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='', ID=54)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=54, Ver=49, Dir='DV54_V49.imesh/')
+	$end 'InitialMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=54, Ver=49, Dir='DV54_MI0_V49.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock1(pos=3484, lin=98, lvl=0)
+		BlockMapName(pos=799, lin=23, lvl=0)
+		SolutionBlock12(pos=2498, lin=83, lvl=0)
+		SolutionBlock21(pos=1277, lin=30, lvl=0)
+		SolutionBlock22(pos=370, lin=1, lvl=0)
+		SolutionBlock11(pos=1679, lin=50, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=3979, lin=121, lvl=0)
+	$end '$index$'
+$end '$index$'
