@@ -80,9 +80,10 @@ N_limit = H_limit * Length / Idc;
 %% Linear Core
 % Homogenous
 j = 0;
-for N = 10:5:100
+for N = 10:1:100
     j=j+1;
     Ind_Homog(j) = N.^2/HomogReluct;
+
 end
 %plot(10:5:100,Ind_homog);
 % Nonhomogenous
@@ -98,27 +99,29 @@ for InnerRadius = ID/2:StepLength:(OD/2-StepLength)
 end
 EquivReluct = 1./sum(1./(NonHomogReluct(:)));
 j = 0;
-for N = 10:5:100
+for N = 10:1:100
     j=j+1;
     Ind_NonHomog(j) = N.^2/EquivReluct;
+
 end
 
 
 %% NonLinear Core
 % Homogenous
 j = 0;
-for N= 10:5:100
+for N= 10:1:100
     j = j + 1;
     H_dummy = N*Idc / (Length * 100); % in AmperTurns/cm
     Perm_dummy = 1/(a1 + b1 * H_dummy^c1);
     Reluct_dummy = Length / (Area * Perm0 * Perm_dummy * 125 /100);
     Ind_NonLinHomog(j) = N^2 / Reluct_dummy;
+
 end
 % Nonhomogeous
 StepNumber = 40;
 StepLength = (OD/2 - ID/2)/(StepNumber-1); %increase as radius
 j = 0;
-for N= 10:5:100
+for N= 10:1:100
     i = 0;
     j = j + 1;
     clear NonHomogReluct;
@@ -133,6 +136,7 @@ for InnerRadius = ID/2:StepLength:(OD/2-StepLength)
 end
 EquivReluct = 1./sum(1./(NonHomogReluct(:)));
 Ind_NonLinNonHomog(j) = N.^2/EquivReluct;
+
 end
 
 
