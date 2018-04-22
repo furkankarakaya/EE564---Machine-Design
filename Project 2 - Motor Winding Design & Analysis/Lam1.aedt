@@ -266,8 +266,8 @@ $begin 'AnsoftProject'
 				$end 'Properties'
 				CompExtID=6
 				$begin 'Parameters'
-					MenuProp('CoSimulator', 'D', '', 'DefaultNetlist', 0)
 					ButtonProp('CosimDefinition', 'D', '', '', 'Edit', 40501, ButtonPropClientData())
+					MenuProp('CoSimulator', 'D', '', 'DefaultNetlist', 0)
 				$end 'Parameters'
 				$begin 'CosimDefinitions'
 					$begin 'CosimDefinition'
@@ -897,7 +897,7 @@ $begin 'AnsoftProject'
 				DataName='Machine'
 				FrictionLoss='0W'
 				WindLoss='0W'
-				ReferenceSpeed='1300rpm'
+				ReferenceSpeed='1277rpm'
 				NumberOfPoles=4
 				StrayLossFactor='0.01'
 			$end 'Machine'
@@ -914,7 +914,7 @@ $begin 'AnsoftProject'
 				PressBoardThickness='0mm'
 				OuterDiameter='170mm'
 				InnerDiameter='115mm'
-				Length='200mm'
+				Length='150mm'
 				StackingFactor=0.95
 				SteelType='steel_1010'
 				SlotType='4'
@@ -926,9 +926,9 @@ $begin 'AnsoftProject'
 				DataID=2
 				ParentID=-1
 				DataName='Rotor'
-				OuterDiameter='114.3mm'
+				OuterDiameter='114.56mm'
 				InnerDiameter='45mm'
-				Length='200mm'
+				Length='150mm'
 				SteelType='steel_1010'
 				NumberOfSlots=33
 				SlotType='4'
@@ -978,7 +978,7 @@ $begin 'AnsoftProject'
 				InputHalfTurnLength=false
 				HalfTurnLength='0mm'
 				ParallelBranches=1
-				ConductorsPerSlot='27'
+				ConductorsPerSlot='50'
 				CoilPitch=0
 				EndAdjustment='0mm'
 				BaseInnerRadius='0mm'
@@ -1000,10 +1000,10 @@ $begin 'AnsoftProject'
 				NumberOfStrands='1'
 				WireWrap='0.01mm'
 				InterturnInsulation='0mm'
-				WireDiameter='1.829mm'
+				WireDiameter='1.369mm'
 				WireWidth='0mm'
 				WireThickness='0mm'
-				Gauge='13'
+				Gauge='15'
 				IsRectWireType=false
 				MixedDiamter[0:]
 				MixedNumber[0:]
@@ -1051,12 +1051,12 @@ $begin 'AnsoftProject'
 					ID=0
 					SetupType='TPIM'
 					Enabled=true
-					RatedOutputPower='7025W'
+					RatedOutputPower='2567W'
 					RatedVoltage='380V'
-					RatedSpeed='1305rpm'
+					RatedSpeed='1277rpm'
 					OperatingTemperature='75cel'
 					OperationType='Motor'
-					LoadType='ConstTorque'
+					LoadType='ConstPower'
 					Frequency='50Hz'
 					WindingConnection=0
 				$end 'Setup1'
@@ -1088,11 +1088,11 @@ $begin 'AnsoftProject'
 				$end 'Solution'
 			$end 'SimSetup'
 			$begin 'Version ID Map'
-				V=309
+				V=626
 				$begin 'Setup'
 					N='Setup1'
-					V=336
-					Soln(N='Performance', V=336)
+					V=626
+					Soln(N='Performance', V=626)
 				$end 'Setup'
 			$end 'Version ID Map'
 			$begin 'ID Map'
