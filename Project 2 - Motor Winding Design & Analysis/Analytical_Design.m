@@ -7,12 +7,13 @@ clear all;
 Bore_Diameter = 115e-3;
 Axial_Length = 150e-3;
 Slot_Number = 36;
+RotorSlot = 33;
 Freq = 50;
 Pole_Number = 4;
 Phase_Number = 3;
 q = Slot_Number/(Pole_Number*Phase_Number);
 Slot_Angle = 2*pi/(Slot_Number/(Pole_Number/2));
-for i=1:5
+for i=1:11
     k_p(i) = round(sin(i*pi/2));
     k_d(i) = sin(i*q*Slot_Angle/2)/(q*sin(i*Slot_Angle/2));
     k_w(i) = k_p(i) * k_d(i);
@@ -21,18 +22,18 @@ V_LineNeut = 220;
 A_pole = pi*Bore_Diameter*Axial_Length/Pole_Number;
 Bpeak = 0.40;
 Bavg = Bpeak*2/pi;
-N_phase = round(V_LineNeut/(Freq*k_w(1)*4.44*Bavg*A_pole));
+N_phase = round(V_LineNeut*0.9/(Freq*k_w(1)*4.44*Bavg*A_pole));
 N_slot = round(2*N_phase/(q*Pole_Number));
 A_slot = 93.3;
 Fill_factor = 0.75;
 A_wire = A_slot*Fill_factor/N_slot;
 D_wire = 2*sqrt(A_wire/pi);
-Electric_Loading_Peak = 35e3;
+Electric_Loading_Peak = 38e3;
 Electric_Loading_RMS = Electric_Loading_Peak / sqrt(2);
 I_stator = Electric_Loading_RMS*pi*Bore_Diameter / (Slot_Number*N_slot);
 Sin = 3*V_LineNeut*I_stator;
-Efficiency = 0.89;
-Power_Factor = 0.88;
+Efficiency = 0.85;
+Power_Factor = 0.9;
 Pout = Sin*Efficiency*Power_Factor;
 Stress = Electric_Loading_Peak * Bpeak * Power_Factor / 2;
 Rotor_Volume = pi*(Bore_Diameter/2)^2 *Axial_Length;
@@ -45,10 +46,29 @@ Temp = 75;
 rho = (1 + 38e-4*(Temp - 20))*1.68e-8;
 Rph = N_phase * rho * 2*(Axial_Length + pi*Bore_Diameter/4) / (A_wire*1e-6);
 
-N_pole = Slot_Number/Pole_Number * N_slot;
-Flux_PolePair = Bavg*A_pole*2;
-Mutual_Inductance = N_pole * Flux_PolePair / I_stator;
-Mutual_Impedance = 2*pi*Freq*Mutual_Inductance;
+AirGapLength = 0.2e-3;
+MutualInductance = Phase_Number * 4*pi*1e-7*Bore_Diameter*Axial_Length*(N_phase/Pole_Number)^2 ...
+    *k_w(1)/(pi*AirGapLength);
+MutualImpedance = MutualInductance *2*pi*Freq;
+StatorLeakCoef = 0;
+for i=2:11
+    StatorLeakCoef = StatorLeakCoef + (k_w(i)/(i*k_w(1)))^2;
+end
+StatorLeakageInductance = MutualInductance * StatorLeakCoef;
+StatorLeakageImpedance = StatorLeakageInductance * 2*pi*Freq;
+
+SkewFactor = sin(pi/2 *1/(Phase_Number*q))/(pi/2 *1/(Phase_Number*q)); %Eqn 4.27
+RotorLeakCoef = ((Pole_Number/2 *pi/RotorSlot)/(sin((Pole_Number/2 *pi/RotorSlot))))^2/SkewFactor^2 - 1;
+RotorLeakageInductance = MutualInductance * RotorLeakCoef;
+RotorLeakageImpedance = 2*pi*50 * RotorLeakageInductance;
+%Approximate Loss
+StatorResLoss = Rph*I_stator^2*3;
+RotorResLoss = StatorResLoss;
+kh = 176.3;
+kc = 0.102;
+ke = 2.724;
+StatorVol = 2.78e-3;
+CoreLoss = StatorVol*(kh*Freq + kc*Freq^2 + ke*Freq^1.5);
 
 %% Windings - MMFs
 A = [0 1 1 1 0 0 0 0 0 0 -1 -1 -1 0 0 0 0 0 0];
