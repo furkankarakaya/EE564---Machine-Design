@@ -3901,9 +3901,9 @@ $begin 'AnsoftProject'
 				NumberOfSlots=48
 				LaminationSectors=0
 				PressBoardThickness='0mm'
-				OuterDiameter='639.5mm'
-				InnerDiameter='509mm'
-				Length='315mm'
+				OuterDiameter='808.4mm'
+				InnerDiameter='632mm'
+				Length='219.2mm'
 				StackingFactor=0.96
 				SteelType='JFE_Steel_35JNE300'
 				SlotType='3'
@@ -3915,9 +3915,9 @@ $begin 'AnsoftProject'
 				DataID=2
 				ParentID=-1
 				DataName='Rotor'
-				OuterDiameter='508.6mm'
+				OuterDiameter='630mm'
 				InnerDiameter='250mm'
-				Length='315mm'
+				Length='219.2mm'
 				SteelType='JFE_Steel_35JNE300'
 				NumberOfSlots=64
 				SlotType='4'
@@ -3946,14 +3946,14 @@ $begin 'AnsoftProject'
 				DataName='Slot'
 				Hs0='3mm'
 				Hs1='0mm'
-				Hs2='25.3mm'
-				Bs0='6mm'
+				Hs2='49mm'
+				Bs0='15mm'
 				Bs1='17.5mm'
 				Bs2='17.5mm'
 				Rs='0mm'
 				AutoDesign=false
 				ParallelTooth=true
-				ToothWidth='17.5mm'
+				ToothWidth='20.3mm'
 			$end 'Slot'
 			$begin 'Winding'
 				DataType='Winding'
@@ -3967,7 +3967,7 @@ $begin 'AnsoftProject'
 				InputHalfTurnLength=false
 				HalfTurnLength='0mm'
 				ParallelBranches=1
-				ConductorsPerSlot='4'
+				ConductorsPerSlot='5'
 				CoilPitch=0
 				EndAdjustment='0mm'
 				BaseInnerRadius='0mm'
@@ -3987,7 +3987,7 @@ $begin 'AnsoftProject'
 				Wdgcoil_go[0:]
 				Wdgcoil_re[0:]
 				NumberOfStrands='10'
-				WireWrap='0mm'
+				WireWrap='0.5mm'
 				InterturnInsulation='0mm'
 				WireDiameter='2.906mm'
 				WireWidth='0mm'
@@ -4011,8 +4011,8 @@ $begin 'AnsoftProject'
 				Hs1='1.5mm'
 				Hs2='60mm'
 				Bs0='1.1mm'
-				Bs1='10mm'
-				Bs2='4mm'
+				Bs1='12mm'
+				Bs2='8mm'
 				Rs='1.55mm'
 				Hs01='1mm'
 			$end 'Slot'
@@ -4025,8 +4025,8 @@ $begin 'AnsoftProject'
 				DataName='Winding'
 				BarConductorType='aluminum'
 				EndLength='20mm'
-				EndRingWidth='20mm'
-				EndRingHeight='20mm'
+				EndRingWidth='25mm'
+				EndRingHeight='25mm'
 				EndRingConductorType='copper'
 			$end 'Winding'
 		$end 'MachineSetup'
@@ -4077,11 +4077,11 @@ $begin 'AnsoftProject'
 				$end 'Solution'
 			$end 'SimSetup'
 			$begin 'Version ID Map'
-				V=392
+				V=1260
 				$begin 'Setup'
 					N='Setup1'
-					V=392
-					Soln(N='Performance', V=392)
+					V=1260
+					Soln(N='Performance', V=1260)
 				$end 'Setup'
 			$end 'Version ID Map'
 			$begin 'ID Map'

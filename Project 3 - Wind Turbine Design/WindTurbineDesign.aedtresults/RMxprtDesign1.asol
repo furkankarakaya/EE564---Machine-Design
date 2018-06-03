@@ -1,19 +1,19 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002018, month=000000000006, day=000000000003, hour=000000000017, min=000000000052, sec=000000000016)
+    time(year=000000002018, month=000000000006, day=000000000003, hour=000000000022, min=000000000013, sec=000000000020)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
-    $index$(pos=000000001804, lin=000000000052, lvl=000000000000)
+    $index$(pos=000000001825, lin=000000000052, lvl=000000000000)
   $end '$base_index$'
 $end '$base_index$'
-$begin 'SolutionBlock54'
+$begin 'SolutionBlock178'
 	SolutionName='Performance'
 	SolutionID=33
-	V=392
+	V=1260
 	$begin 'States'
-		F(VID=46, Ver=392)
+		F(VID=46, Ver=1260)
 	$end 'States'
 	$begin 'Definition'
 		SamplingInterpolation=false
@@ -22,36 +22,36 @@ $begin 'SolutionBlock54'
 		CenterFreq=0
 	$end 'Definition'
 	$begin 'SolutionDataFiles'
-		MSolutionData(VID=46, Ver=392, Dir='DV46_SOL33_V392.MSolutionData/')
+		MSolutionData(VID=46, Ver=1260, Dir='DV46_SOL33_V1260.MSolutionData/')
 	$end 'SolutionDataFiles'
 	$begin 'SolverDataFiles'
-		MSolverData(VID=46, Ver=392, File='DV46_SOL33_V392.MSolverData')
+		MSolverData(VID=46, Ver=1260, File='DV46_SOL33_V1260.MSolverData')
 	$end 'SolverDataFiles'
 	$begin 'ExportDataFiles'
-		MExportData(VID=46, Ver=392, Dir='DV46_SOL33_V392.MExportData/')
+		MExportData(VID=46, Ver=1260, Dir='DV46_SOL33_V1260.MExportData/')
 	$end 'ExportDataFiles'
 	$begin 'CurvesDataFiles'
-		MCurvesData(VID=46, Ver=392, Dir='DV46_SOL33_V392.MCurvesData/')
+		MCurvesData(VID=46, Ver=1260, Dir='DV46_SOL33_V1260.MCurvesData/')
 	$end 'CurvesDataFiles'
-$end 'SolutionBlock54'
+$end 'SolutionBlock178'
 $begin 'BlockMapName'
 	FileHeader='SolutionBlock1'
-	'SolutionKey(SimSetup=32, Instance=\'SetupDefinition\', Solution=-1, VersionID=392)'='SolutionBlock55'
-	'SolutionKey(SimSetup=32, Instance=\'SolutionDefinition\', Solution=33, VersionID=392)'='SolutionBlock54'
+	'SolutionKey(SimSetup=32, Instance=\'SetupDefinition\', Solution=-1, VersionID=1260)'='SolutionBlock179'
+	'SolutionKey(SimSetup=32, Instance=\'SolutionDefinition\', Solution=33, VersionID=1260)'='SolutionBlock178'
 $end 'BlockMapName'
-$begin 'SolutionBlock55'
+$begin 'SolutionBlock179'
 	SimSetupID=32
 	SimSetupName='Setup1'
-	VersionID=392
+	VersionID=1260
 	SolveSetupID=0
-$end 'SolutionBlock55'
+$end 'SolutionBlock179'
 $begin 'SolutionBlock1'
 	ProductName=''
 	CircuitName='RMxprtDesign1'
-	VersionID=392
+	VersionID=1260
 	PostProcess=false
 	LossLess=true
-	NextUniqueID=405
+	NextUniqueID=1273
 	MoveBackwards=false
 	$begin 'VariationIDs'
 		Map(V='', ID=46)
@@ -61,11 +61,11 @@ $begin 'SolutionBlock1'
 $end 'SolutionBlock1'
 $begin '$index$'
 	$begin '$index$'
-		SolutionBlock1(pos=1514, lin=38, lvl=0)
-		BlockMapName(pos=1115, lin=27, lvl=0)
-		SolutionBlock54(pos=370, lin=1, lvl=0)
-		SolutionBlock55(pos=1397, lin=32, lvl=0)
+		SolutionBlock1(pos=1533, lin=38, lvl=0)
+		SolutionBlock178(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=1127, lin=27, lvl=0)
+		SolutionBlock179(pos=1413, lin=32, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)
-		$index$(pos=1804, lin=52, lvl=0)
+		$index$(pos=1825, lin=52, lvl=0)
 	$end '$index$'
 $end '$index$'

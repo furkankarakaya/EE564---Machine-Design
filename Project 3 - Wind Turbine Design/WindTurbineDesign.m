@@ -11,24 +11,24 @@ PolePair = 4;
 PoleNumber = PolePair *2;
 LineVoltage = 400; %V
 Freq = 50; %Hz
-RatedSpeed = 758; %rpm
+RatedSpeed = 742; %rpm
 Phase = 3;
 %% Design
 %Dimensions
-Bpeak = 0.9; %T
-Arms = 45e3; %Amperes
+Bpeak = 0.7; %T
+Arms = 55e3; %Amperes
 PF = 0.85;
 Stress = Arms*Bpeak*PF/sqrt(2); %Pa
 To = Po/(RatedSpeed*2*pi/60); %Nm
 Volume = To/2/Stress; %m^3
 D2Lprime = 4*Volume/pi;
-AspectRatio = pi/PoleNumber * PolePair^(1/3);
+AspectRatio = 0.35;%pi/PoleNumber * PolePair^(1/3);
 BoreDiameter = round((D2Lprime / AspectRatio)^(1/3),3); %m
 Lprime = BoreDiameter * AspectRatio; %m
 AirGap = 0.18 + 0.006*Po^(0.4); %mm
 AirGap = round(AirGap * 1e-3,4); %m
-AxialLength = round(Lprime - 2*AirGap,3);
-
+AxialLength = round(Lprime - 2*AirGap,4);
+RotorDiameter = BoreDiameter - 2*AirGap;
 %Slot Numbers
 for q = 1:6
     Qs(q) = q*PoleNumber*Phase;
@@ -39,7 +39,7 @@ q = 2;
 Qs = q*PoleNumber*Phase;
 SlotPitch = pi*BoreDiameter / Qs; %m
 kFE = 0.96; %Stacking Factor
-ToothFluxDensity = 1.8; %T
+ToothFluxDensity = 1.5; %T
 b4 = round(Lprime * SlotPitch * Bpeak / (kFE * AxialLength * ToothFluxDensity),4) * 1e3; %mm
 
 %Windings
@@ -50,8 +50,8 @@ for i=1:11
     k_w(i) = k_p(i) * k_d(i);
 end
 FluxPerPole = (Bpeak*2/pi)*pi*BoreDiameter*Lprime/PoleNumber; %Wb
-Nphase = round((LineVoltage/sqrt(2) *0.9) / (4.44*FluxPerPole*k_w(1)*Freq));
-Nslot = round(Nphase * 2 /(Qs/Phase));
+Nphase = (LineVoltage/sqrt(2) *0.8) / (4.44*FluxPerPole*k_w(1)*Freq);
+Nslot = Nphase * 2 /(Qs/Phase);
 
 J = 7; %Arms/mm^2 - Fan cooled
 Eff = 0.95;
@@ -60,10 +60,11 @@ Irms = S/(sqrt(3)*LineVoltage); %Arms
 Awire = round(Irms/J,1); % mm^2
 AvailableWireArea = 6.63; %mm^2 - 9 AWG
 AvailableWireDia = sqrt(AvailableWireArea/pi) * 2;%mm
+InsulationThickness = 0.5; %mm
 ParallelConductors = round(Awire/AvailableWireArea);
-TotalWireArea = 10*AvailableWireArea; %mm
+TotalWireArea = 10*pi*(InsulationThickness + AvailableWireDia/2)^2; %mm
 FillFactor = 0.6;
-SlotArea = Nslot*TotalWireArea/FillFactor; %mm^2
+SlotArea = round(Nslot)*TotalWireArea/FillFactor; %mm^2
 h4 = SlotArea/b4; %% mm
 
 YokeFluxDensity = 1.5; %T
