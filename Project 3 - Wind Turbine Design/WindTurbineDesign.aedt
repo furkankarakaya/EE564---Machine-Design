@@ -1,0 +1,4195 @@
+$begin 'AnsoftProject'
+	Created='Sun Jun 03 14:13:17 2018'
+	Product='ElectronicsDesktop'
+	FileOwnedByWorkbench=false
+	$begin 'Desktop'
+		Version(2017, 0)
+		InfrastructureVersion(1, 0)
+	$end 'Desktop'
+	UsesAdvancedFeatures=false
+	NextUniqueID=0
+	MoveBackwards=false
+	$begin 'HFSSEnvironment'
+		Version(1, 0)
+	$end 'HFSSEnvironment'
+	$begin 'PlanarEMEnvironment'
+		Version(1, 0)
+	$end 'PlanarEMEnvironment'
+	$begin 'HFIEEnvironment'
+		Version(1, 0)
+	$end 'HFIEEnvironment'
+	$begin 'Q3DEnvironment'
+		Version(1, 0)
+	$end 'Q3DEnvironment'
+	$begin '2DExtractorEnvironment'
+		Version(1, 0)
+	$end '2DExtractorEnvironment'
+	$begin 'NexximEnvironment'
+		Version(1, 0)
+	$end 'NexximEnvironment'
+	$begin 'NexximNetlistEnvironment'
+		Version(1, 0)
+	$end 'NexximNetlistEnvironment'
+	$begin 'Maxwell3DEnvironment'
+		Version(1, 0)
+	$end 'Maxwell3DEnvironment'
+	$begin 'Maxwell2DEnvironment'
+		Version(1, 0)
+	$end 'Maxwell2DEnvironment'
+	$begin 'RMxprtEnvironment'
+		Version(1, 0)
+	$end 'RMxprtEnvironment'
+	$begin 'MaxCirEnvironment'
+		Version(1, 0)
+	$end 'MaxCirEnvironment'
+	$begin 'SimplorerEnvironment'
+		Version(1, 0)
+	$end 'SimplorerEnvironment'
+	$begin 'FilterDesignEnvironment'
+	$end 'FilterDesignEnvironment'
+	$begin 'SchematicEnvironment'
+		Version(1, 0)
+	$end 'SchematicEnvironment'
+	$begin 'geometry3deditor'
+		Version(1, 0)
+	$end 'geometry3deditor'
+	ReadVersion=5
+	$begin 'DesignMgrEnvironment'
+		CompInstCounter=3
+		GPortCounter=0
+		NetCounter=0
+		Alias('Ieee;Simplorer Elements\\Ieee', 'Std;Simplorer Elements\\Std', 'Basic_VHDLAMS;Simplorer Elements\\Basic Elements VHDLAMS\\Basic Elements VHDLAMS', 'Digital_Elements;Simplorer Elements\\Digital Elements\\Digital Elements', 'Transformations;Simplorer Elements\\Tools\\Transformations\\Transformations', 'HEV_VHDLAMS;Simplorer Elements\\HEV VHDLAMS\\HEV VHDLAMS', 'automotive_vda;Simplorer Elements\\VDALibs VHDLAMS\\automotive_vda', 'example_boardnet;Simplorer Elements\\VDALibs VHDLAMS\\example_boardnet', 'example_ecar;Simplorer Elements\\VDALibs VHDLAMS\\example_ecar', 'fundamentals_vda;Simplorer Elements\\VDALibs VHDLAMS\\fundamentals_vda', 'hybrid_emc_vda;Simplorer Elements\\VDALibs VHDLAMS\\hybrid_emc_vda', 'megma;Simplorer Elements\\VDALibs VHDLAMS\\megma', 'modelica_rotational;Simplorer Elements\\VDALibs VHDLAMS\\modelica_rotational', 'modelica_thermal;Simplorer Elements\\VDALibs VHDLAMS\\modelica_thermal', 'modelica_translational;Simplorer Elements\\VDALibs VHDLAMS\\modelica_translational', 'spice2vhd;Simplorer Elements\\VDALibs VHDLAMS\\spice2vhd', 'spice2vhd_devices;Simplorer Elements\\VDALibs VHDLAMS\\spice2vhd_devices', 'aircraft_electrical_vhdlams;Simplorer Elements\\Aircraft Electrical VHDLAMS\\Aircraft Electrical VHDLAMS', 'power_system_vhdlams;Simplorer Elements\\Power System VHDLAMS\\Power System VHDLAMS')
+	$end 'DesignMgrEnvironment'
+	$begin 'ProjectDatasets'
+		NextUniqueID=0
+		MoveBackwards=false
+		DatasetType='ProjectDatasetType'
+		$begin 'DatasetDefinitions'
+		$end 'DatasetDefinitions'
+	$end 'ProjectDatasets'
+	VariableOrders[0:]
+	$begin 'Definitions'
+		$begin 'Folders'
+			Definitions(1604, 10000, 1, 1, 0, false, false)
+			Materials(1604, 9500, 9, 2, 1, false, false)
+			Scripts(1604, 9502, 33500, 4, 1, false, false)
+			Padstacks(1604, 9003, 12, 105, 1, false, false)
+			Symbols(1604, 9001, 10, 103, 1, false, false)
+			Footprints(1604, 9002, 11, 104, 1, false, false)
+			Components(1604, 9000, 8, 102, 1, false, false)
+			Models(1604, 9004, 13, 106, 1, false, false)
+			Packages(1604, 9005, 33502, 107, 1, false, false)
+		$end 'Folders'
+		$begin 'Materials'
+			$begin 'steel_1008'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic', 'Thermal', 'Structural')
+				$end 'PhysicsTypes'
+				$begin 'permeability'
+					property_type='nonlinear'
+					BType='normal'
+					HUnit='A_per_meter'
+					BUnit='tesla'
+					$begin 'BHCoordinates'
+						$begin 'Coordinate'
+							X=0
+							Y=0
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=159.2
+							Y=0.2402
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=318.3
+							Y=0.8654
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=477.5
+							Y=1.1106
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=636.6
+							Y=1.2458
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=795.8
+							Y=1.331
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1591.5
+							Y=1.5
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=3183.1
+							Y=1.6
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=4774.6
+							Y=1.683
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=6366.2
+							Y=1.741
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=7957.7
+							Y=1.78
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=15915.5
+							Y=1.905
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=31831
+							Y=2.025
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=47746.5
+							Y=2.085
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=63662
+							Y=2.13
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=79577.5
+							Y=2.165
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=159155
+							Y=2.28
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=318310
+							Y=2.485
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=397887
+							Y=2.5851
+						$end 'Coordinate'
+					$end 'BHCoordinates'
+				$end 'permeability'
+				conductivity='2000000'
+				magnetic_loss_tangent='0'
+				$begin 'magnetic_coercivity'
+					property_type='VectorProperty'
+					Magnitude='0A_per_meter'
+					DirComp1='1'
+					DirComp2='0'
+					DirComp3='0'
+				$end 'magnetic_coercivity'
+				thermal_conductivity='45'
+				mass_density='7872'
+				specific_heat='481'
+				youngs_modulus='200000000000'
+				poissons_ratio='0.25'
+				thermal_expansion_coeffcient='1.26e-005'
+				ModTime=1528023695
+				Library='Materials'
+				LibLocation='Project'
+				ModSinceLib=true
+			$end 'steel_1008'
+			$begin 'steel_1010'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic', 'Thermal', 'Structural')
+				$end 'PhysicsTypes'
+				permittivity='1'
+				$begin 'permeability'
+					property_type='nonlinear'
+					BType='normal'
+					HUnit='A_per_meter'
+					BUnit='tesla'
+					$begin 'BHCoordinates'
+						$begin 'Coordinate'
+							X=0
+							Y=0
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=238.7
+							Y=0.2003
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=318.3
+							Y=0.3204
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=358.1
+							Y=0.40045
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=437.7
+							Y=0.50055
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=477.5
+							Y=0.5606
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=636.6
+							Y=0.7908
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=795.8
+							Y=0.931
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1114.1
+							Y=1.1014
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1273.2
+							Y=1.2016
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1591.5
+							Y=1.302
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=2228.2
+							Y=1.4028
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=3183.1
+							Y=1.524
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=4774.6
+							Y=1.626
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=6366.2
+							Y=1.698
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=7957.7
+							Y=1.73
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=15915.5
+							Y=1.87
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=31831
+							Y=1.99
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=47746.5
+							Y=2.04
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=63662
+							Y=2.07
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=79577.5
+							Y=2.095
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=159155
+							Y=2.2
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=318310
+							Y=2.4
+						$end 'Coordinate'
+					$end 'BHCoordinates'
+				$end 'permeability'
+				conductivity='2000000'
+				dielectric_loss_tangent='0'
+				magnetic_loss_tangent='0'
+				$begin 'magnetic_coercivity'
+					property_type='VectorProperty'
+					Magnitude='0A_per_meter'
+					DirComp1='1'
+					DirComp2='0'
+					DirComp3='0'
+				$end 'magnetic_coercivity'
+				thermal_conductivity='45'
+				saturation_mag='0gauss'
+				lande_g_factor='2'
+				delta_H='0Oe'
+				mass_density='7872'
+				specific_heat='448'
+				youngs_modulus='205000000000'
+				poissons_ratio='0.28'
+				thermal_expansion_coeffcient='1.22e-005'
+				ModTime=1528023712
+				Library='Materials'
+				LibLocation='Project'
+				ModSinceLib=true
+			$end 'steel_1010'
+			$begin 'aluminum'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic', 'Thermal', 'Structural')
+				$end 'PhysicsTypes'
+				permeability='1.000021'
+				conductivity='38000000'
+				thermal_conductivity='237.5'
+				mass_density='2689'
+				specific_heat='951'
+				youngs_modulus='69000000000'
+				poissons_ratio='0.31'
+				thermal_expansion_coeffcient='2.33e-005'
+				ModTime=1154373020
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'aluminum'
+			$begin 'copper'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic', 'Thermal', 'Structural')
+				$end 'PhysicsTypes'
+				permeability='0.999991'
+				conductivity='58000000'
+				thermal_conductivity='400'
+				mass_density='8933'
+				specific_heat='385'
+				youngs_modulus='120000000000'
+				poissons_ratio='0.38'
+				thermal_expansion_coeffcient='1.77e-005'
+				ModTime=1132068239
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'copper'
+			$begin 'vacuum'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic')
+				$end 'PhysicsTypes'
+				permittivity='1'
+				ModTime=1028307964
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'vacuum'
+			$begin 'steel_1010_2DSF0.960'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic')
+				$end 'PhysicsTypes'
+				$begin 'permeability'
+					property_type='nonlinear'
+					BType='normal'
+					HUnit='A_per_meter'
+					BUnit='tesla'
+					$begin 'BHCoordinates'
+						$begin 'Coordinate'
+							X=0
+							Y=0
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=238.7
+							Y=0.1923
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=318.3
+							Y=0.3076
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=358.1
+							Y=0.38445
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=437.7
+							Y=0.48055
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=477.5
+							Y=0.5382
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=636.6
+							Y=0.7592
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=795.8
+							Y=0.8938
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1114.1
+							Y=1.0574
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1273.2
+							Y=1.1536
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1591.5
+							Y=1.25
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=2228.2
+							Y=1.3468
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=3183.1
+							Y=1.4632
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=4774.6
+							Y=1.5612
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=6366.2
+							Y=1.6304
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=7957.7
+							Y=1.6612
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=15915.5
+							Y=1.796
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=31831
+							Y=1.912
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=47746.5
+							Y=1.9608
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=63662
+							Y=1.9904
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=79577.5
+							Y=2.0152
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=159155
+							Y=2.12
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=318310
+							Y=2.32
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1909860
+							Y=4.32
+						$end 'Coordinate'
+					$end 'BHCoordinates'
+				$end 'permeability'
+				conductivity='2000000'
+				mass_density='7557.12'
+				ModTime=1528033162
+				Library=''
+				LibLocation='Project'
+				ModSinceLib=false
+			$end 'steel_1010_2DSF0.960'
+			$begin 'aluminum_25C'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic')
+				$end 'PhysicsTypes'
+				conductivity='45307700'
+				ModTime=1528033162
+				Library=''
+				LibLocation='Project'
+				ModSinceLib=false
+			$end 'aluminum_25C'
+			$begin 'DW540_50'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic')
+				$end 'PhysicsTypes'
+				$begin 'permeability'
+					property_type='nonlinear'
+					BType='normal'
+					HUnit='A_per_meter'
+					BUnit='tesla'
+					$begin 'BHCoordinates'
+						$begin 'Coordinate'
+							X=0
+							Y=0
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=66
+							Y=0.4
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=70
+							Y=0.45
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=74
+							Y=0.5
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=78
+							Y=0.55
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=82
+							Y=0.6
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=88
+							Y=0.65
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=92
+							Y=0.7
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=97
+							Y=0.75
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=104
+							Y=0.8
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=111
+							Y=0.85
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=118
+							Y=0.9
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=126
+							Y=0.95
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=136
+							Y=1
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=148
+							Y=1.05
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=161
+							Y=1.1
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=179
+							Y=1.15
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=203
+							Y=1.2
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=239
+							Y=1.25
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=287
+							Y=1.3
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=350
+							Y=1.35
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=462
+							Y=1.4
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=637
+							Y=1.45
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=955
+							Y=1.5
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1513
+							Y=1.55
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=2548
+							Y=1.6
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=3822
+							Y=1.65
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=5255
+							Y=1.7
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=6847
+							Y=1.75
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=10035
+							Y=1.8
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=14006
+							Y=1.85
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=19085
+							Y=1.9
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=25048
+							Y=1.95
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=32047
+							Y=2
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=42605
+							Y=2.05
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=56529
+							Y=2.1
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=78025
+							Y=2.15
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=103500
+							Y=2.2
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=127390
+							Y=2.25
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=156050
+							Y=2.3
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=191080
+							Y=2.35
+						$end 'Coordinate'
+					$end 'BHCoordinates'
+				$end 'permeability'
+				$begin 'magnetic_coercivity'
+					property_type='VectorProperty'
+					Magnitude='0A_per_meter'
+					DirComp1='1'
+					DirComp2='0'
+					DirComp3='0'
+				$end 'magnetic_coercivity'
+				$begin 'core_loss_type'
+					property_type='ChoiceProperty'
+					Choice='Electrical Steel'
+				$end 'core_loss_type'
+				core_loss_kh='268'
+				core_loss_kc='0.822'
+				core_loss_ke='0'
+				mass_density='7750'
+				ModTime=1528036171
+				Library='RMxprt'
+				LibLocation='Project'
+				ModSinceLib=true
+			$end 'DW540_50'
+			$begin 'D21_50'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic')
+				$end 'PhysicsTypes'
+				$begin 'permeability'
+					property_type='nonlinear'
+					BType='normal'
+					HUnit='A_per_meter'
+					BUnit='tesla'
+					$begin 'BHCoordinates'
+						$begin 'Coordinate'
+							X=0
+							Y=0
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=140
+							Y=0.4
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=155
+							Y=0.45
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=171
+							Y=0.5
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=191
+							Y=0.55
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=212
+							Y=0.6
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=237
+							Y=0.65
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=267
+							Y=0.7
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=302
+							Y=0.75
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=340
+							Y=0.8
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=380
+							Y=0.85
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=425
+							Y=0.9
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=476
+							Y=0.95
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=536
+							Y=1
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=602
+							Y=1.05
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=675
+							Y=1.1
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=765
+							Y=1.15
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=880
+							Y=1.2
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1020
+							Y=1.25
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1200
+							Y=1.3
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1450
+							Y=1.35
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1740
+							Y=1.4
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=2160
+							Y=1.45
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=2800
+							Y=1.5
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=3850
+							Y=1.55
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=5290
+							Y=1.6
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=6920
+							Y=1.65
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=8800
+							Y=1.7
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=11000
+							Y=1.75
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=13800
+							Y=1.8
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=17300
+							Y=1.85
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=21400
+							Y=1.9
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=25000
+							Y=1.95
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=30000
+							Y=2
+						$end 'Coordinate'
+					$end 'BHCoordinates'
+				$end 'permeability'
+				$begin 'magnetic_coercivity'
+					property_type='VectorProperty'
+					Magnitude='0A_per_meter'
+					DirComp1='1'
+					DirComp2='0'
+					DirComp3='0'
+				$end 'magnetic_coercivity'
+				$begin 'core_loss_type'
+					property_type='ChoiceProperty'
+					Choice='Electrical Steel'
+				$end 'core_loss_type'
+				core_loss_kh='366'
+				core_loss_kc='0.822'
+				core_loss_ke='0.91'
+				mass_density='7820'
+				ModTime=1111518800
+				Library='RMxprt'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'D21_50'
+			$begin 'JFE_Steel_SuperCore_20JNHF1300'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic')
+				$end 'PhysicsTypes'
+				$begin 'AttachedData'
+					$begin 'CoreLossMultiCurveData'
+						property_data='coreloss_multi_curve_data'
+						coreloss_unit='w_per_kg'
+						$begin 'AllCurves'
+							$begin 'OneCurve'
+								Frequency='50Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.05
+										Y=0.004
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.08
+										Y=0.012
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.019
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=0.066
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.299
+										Y=0.133
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.399
+										Y=0.217
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.499
+										Y=0.315
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.599
+										Y=0.428
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.699
+										Y=0.551
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='60Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.05
+										Y=0.006
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.08
+										Y=0.014
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.022
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=0.08
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=0.162
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=0.264
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=0.384
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=0.525
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=0.67
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='100Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.038
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=0.14
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=0.283
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=0.463
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=0.673
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=0.919
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=1.187
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=1.435
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=1.683
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=1.953
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='200Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.081
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=0.302
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=0.617
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=1.018
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=1.489
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=2.054
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=2.651
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=3.231
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=3.861
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=4.548
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=5.319
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='400Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.182
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=0.684
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=1.414
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=2.322
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=3.432
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=4.73
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=6.169
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=7.637
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=9.281
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=11.144
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='1kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.05
+										Y=0.136
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.08
+										Y=0.352
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.552
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=2.12
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=4.415
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=7.307
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=10.875
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=15.218
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=25.858
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=39.745
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.05
+										Y=43.805
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='2kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.02
+										Y=0.052
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.03
+										Y=0.119
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.05
+										Y=0.339
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.08
+										Y=0.873
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=1.367
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=5.258
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=11.03
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=18.396
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=27.584
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=39.081
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=69.513
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=112.105
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.05
+										Y=124.9
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='5kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=0.05
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.02
+										Y=0.199
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.03
+										Y=0.453
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.05
+										Y=1.245
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.08
+										Y=3.111
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=4.83
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=18.493
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=39.455
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=67.285
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=102.991
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=148.889
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=286.096
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=481.155
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='10kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.005
+										Y=0.036
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=0.146
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.02
+										Y=0.58
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.03
+										Y=1.289
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.05
+										Y=3.524
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.08
+										Y=8.806
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=13.605
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=51.496
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=111.101
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=193.699
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=302.656
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=446.538
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=876.617
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='20kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.002
+										Y=0.016
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.005
+										Y=0.111
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=0.455
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.02
+										Y=1.796
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.0299
+										Y=3.993
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.0499
+										Y=10.884
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.0799
+										Y=27.094
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.0998
+										Y=41.639
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1997
+										Y=156.977
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2995
+										Y=345.639
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3993
+										Y=621.946
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4991
+										Y=989.358
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5988
+										Y=1457.13
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+						$end 'AllCurves'
+					$end 'CoreLossMultiCurveData'
+				$end 'AttachedData'
+				$begin 'permeability'
+					property_type='nonlinear'
+					BType='normal'
+					HUnit='A_per_meter'
+					BUnit='tesla'
+					$begin 'BHCoordinates'
+						$begin 'Coordinate'
+							X=0
+							Y=0
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1
+							Y=0.0007
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=2
+							Y=0.0017
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=5
+							Y=0.0065
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=10
+							Y=0.0185
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=15
+							Y=0.033
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=20
+							Y=0.0515
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=25
+							Y=0.0733
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=30
+							Y=0.0973
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=40
+							Y=0.1471
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=50
+							Y=0.1947
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=60
+							Y=0.2387
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=70
+							Y=0.2796
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=80
+							Y=0.3176
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=100
+							Y=0.3856
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=125
+							Y=0.4546
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=150
+							Y=0.5079
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=175
+							Y=0.5492
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=200
+							Y=0.5824
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=250
+							Y=0.6349
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=300
+							Y=0.6779
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=400
+							Y=0.754
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=500
+							Y=0.8264
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=800
+							Y=1.035
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1000
+							Y=1.1618
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1500
+							Y=1.3539
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=2000
+							Y=1.421
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=2500
+							Y=1.4604
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=3000
+							Y=1.4994
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=4000
+							Y=1.554
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=5000
+							Y=1.5993
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=8000
+							Y=1.7006
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=10000
+							Y=1.7516
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=15000
+							Y=1.8498
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=20000
+							Y=1.8991
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=30000
+							Y=1.9392
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=40000
+							Y=1.9578
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=50000
+							Y=1.9723
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=55000
+							Y=1.9786
+						$end 'Coordinate'
+					$end 'BHCoordinates'
+				$end 'permeability'
+				$begin 'magnetic_coercivity'
+					property_type='VectorProperty'
+					Magnitude='0A_per_meter'
+					DirComp1='1'
+					DirComp2='0'
+					DirComp3='0'
+				$end 'magnetic_coercivity'
+				$begin 'core_loss_type'
+					property_type='ChoiceProperty'
+					Choice='Electrical Steel'
+				$end 'core_loss_type'
+				core_loss_kh='404.120171894473'
+				core_loss_kc='0.056297104906597'
+				core_loss_ke='0'
+				core_loss_kdc='0'
+				mass_density='7570'
+				ModTime=1472630315
+				Library='JFE_Steel'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'JFE_Steel_SuperCore_20JNHF1300'
+			$begin 'JFE_Steel_50JNE470'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic')
+				$end 'PhysicsTypes'
+				$begin 'AttachedData'
+					$begin 'CoreLossMultiCurveData'
+						property_data='coreloss_multi_curve_data'
+						coreloss_unit='w_per_kg'
+						$begin 'AllCurves'
+							$begin 'OneCurve'
+								Frequency='50Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=0.46
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.55
+										Y=0.53
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=0.61
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.65
+										Y=0.7
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=0.79
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.75
+										Y=0.88
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=0.98
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.85
+										Y=1.09
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=1.2
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.95
+										Y=1.31
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=1.44
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.05
+										Y=1.57
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=1.7
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.15
+										Y=1.85
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.2
+										Y=2
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.25
+										Y=2.17
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.3
+										Y=2.35
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.35
+										Y=2.54
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.4
+										Y=2.75
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.45
+										Y=2.97
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.5
+										Y=3.21
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.55
+										Y=3.46
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.6
+										Y=3.72
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.65
+										Y=4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.7
+										Y=4.28
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='60Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=0.57
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.55
+										Y=0.67
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=0.78
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.65
+										Y=0.9
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=1.01
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.75
+										Y=1.14
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=1.27
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.85
+										Y=1.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=1.55
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.95
+										Y=1.7
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=1.85
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.05
+										Y=2.02
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=2.19
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.15
+										Y=2.38
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.2
+										Y=2.57
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.25
+										Y=2.78
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.3
+										Y=3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.35
+										Y=3.23
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.4
+										Y=3.47
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.45
+										Y=3.73
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.5
+										Y=4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.55
+										Y=4.29
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.6
+										Y=4.61
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.65
+										Y=4.95
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.7
+										Y=5.33
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='100Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.046
+										Y=0.01
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.0585
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=0.237
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=0.494
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=0.817
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=1.19
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=1.62
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=2.1
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=2.64
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=3.24
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=3.91
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=4.66
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.2
+										Y=5.47
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.3
+										Y=6.35
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.4
+										Y=7.37
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.5
+										Y=8.56
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='200Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.028
+										Y=0.01
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.155
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=0.604
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=1.26
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=2.11
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=3.12
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=4.35
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=5.78
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=7.42
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=9.29
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=11.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=13.8
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.2
+										Y=16.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.3
+										Y=19.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.4
+										Y=22.5
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.5
+										Y=26.3
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='400Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.016
+										Y=0.01
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.456
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=1.74
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=3.64
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=6.1
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=9.12
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=12.8
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=17.1
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=22.2
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=28.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=35.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=43.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.2
+										Y=52.6
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.3
+										Y=63
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.4
+										Y=75.2
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='1kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=0.022
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=2.03
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=7.12
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=14.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=24.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=37
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=53.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=73.5
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=99.6
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.81
+										Y=100
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='2kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=0.079
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=5.98
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=20.6
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=41.8
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=71.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.47
+										Y=100
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='5kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=0.37
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.05
+										Y=7.22
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=25.1
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.15
+										Y=50.2
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=83.8
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.22
+										Y=100
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='10kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=1.05
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.05
+										Y=20.7
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=67.6
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.13
+										Y=100
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+						$end 'AllCurves'
+					$end 'CoreLossMultiCurveData'
+				$end 'AttachedData'
+				$begin 'permeability'
+					property_type='nonlinear'
+					BType='normal'
+					HUnit='A_per_meter'
+					BUnit='tesla'
+					$begin 'BHCoordinates'
+						$begin 'Coordinate'
+							X=0
+							Y=0
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=10
+							Y=0.02
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=22.2
+							Y=0.05
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=29.7
+							Y=0.101
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=35.3
+							Y=0.151
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=39.6
+							Y=0.202
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=43
+							Y=0.252
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=46.2
+							Y=0.303
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=49.3
+							Y=0.353
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=52.3
+							Y=0.403
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=55.4
+							Y=0.458
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=58.4
+							Y=0.509
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=61.4
+							Y=0.555
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=64.8
+							Y=0.605
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=68.3
+							Y=0.655
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=72.3
+							Y=0.706
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=76.5
+							Y=0.756
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=81.1
+							Y=0.807
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=85.9
+							Y=0.857
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=91.5
+							Y=0.907
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=98.1
+							Y=0.958
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=106
+							Y=1.008
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=115
+							Y=1.059
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=125
+							Y=1.109
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=138
+							Y=1.16
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=154
+							Y=1.21
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=176
+							Y=1.26
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=205
+							Y=1.311
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=245
+							Y=1.361
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=300
+							Y=1.412
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=382
+							Y=1.462
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=517
+							Y=1.513
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=791
+							Y=1.564
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1310
+							Y=1.615
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=2280
+							Y=1.666
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=3830
+							Y=1.719
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=5000
+							Y=1.755
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=5510
+							Y=1.77
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=7410
+							Y=1.817
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=9810
+							Y=1.864
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=10000
+							Y=1.867
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=13000
+							Y=1.914
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=17500
+							Y=1.972
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=26300
+							Y=2.033
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=51000
+							Y=2.114
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=80000
+							Y=2.161
+						$end 'Coordinate'
+					$end 'BHCoordinates'
+				$end 'permeability'
+				conductivity='2777778'
+				$begin 'magnetic_coercivity'
+					property_type='VectorProperty'
+					Magnitude='0A_per_meter'
+					DirComp1='1'
+					DirComp2='0'
+					DirComp3='0'
+				$end 'magnetic_coercivity'
+				$begin 'core_loss_type'
+					property_type='ChoiceProperty'
+					Choice='Electrical Steel'
+				$end 'core_loss_type'
+				core_loss_kh='385.883741289389'
+				core_loss_kc='0.0609530173651969'
+				core_loss_ke='15.8014122348985'
+				core_loss_kdc='0'
+				mass_density='7750'
+				ModTime=1528036405
+				Library='JFE_Steel'
+				LibLocation='Project'
+				ModSinceLib=true
+			$end 'JFE_Steel_50JNE470'
+			$begin 'JFE_Steel_35JNE300'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic')
+				$end 'PhysicsTypes'
+				$begin 'AttachedData'
+					$begin 'CoreLossMultiCurveData'
+						property_data='coreloss_multi_curve_data'
+						coreloss_unit='w_per_kg'
+						$begin 'AllCurves'
+							$begin 'OneCurve'
+								Frequency='50Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=0.35
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.55
+										Y=0.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=0.47
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.65
+										Y=0.54
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=0.62
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.75
+										Y=0.7
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=0.78
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.85
+										Y=0.86
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=0.95
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.95
+										Y=1.05
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=1.15
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.05
+										Y=1.26
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=1.37
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.15
+										Y=1.5
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.2
+										Y=1.64
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.25
+										Y=1.78
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.3
+										Y=1.93
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.35
+										Y=2.08
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.4
+										Y=2.25
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.45
+										Y=2.42
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.5
+										Y=2.6
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.55
+										Y=2.79
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.6
+										Y=2.99
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.65
+										Y=3.2
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.7
+										Y=3.43
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='60Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=0.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.55
+										Y=0.51
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=0.6
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.65
+										Y=0.69
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=0.78
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.75
+										Y=0.88
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=0.98
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.85
+										Y=1.09
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=1.2
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.95
+										Y=1.32
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=1.45
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.05
+										Y=1.58
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=1.72
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.15
+										Y=1.88
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.2
+										Y=2.04
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.25
+										Y=2.22
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.3
+										Y=2.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.35
+										Y=2.59
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.4
+										Y=2.79
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.45
+										Y=3.01
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.5
+										Y=3.23
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.55
+										Y=3.47
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.6
+										Y=3.73
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.65
+										Y=4.01
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.7
+										Y=4.3
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='100Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.053
+										Y=0.01
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.0405
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=0.17
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=0.362
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=0.599
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=0.871
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=1.18
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=1.51
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=1.85
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=2.24
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=2.68
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=3.17
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.2
+										Y=3.73
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.3
+										Y=4.35
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.4
+										Y=5.07
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.5
+										Y=5.9
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='200Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.034
+										Y=0.01
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.102
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=0.415
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=0.886
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=1.51
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=2.22
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=2.99
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=3.88
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=4.87
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=5.97
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=7.19
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=8.56
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.2
+										Y=10.1
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.3
+										Y=11.8
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.4
+										Y=13.8
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.5
+										Y=16
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='400Hz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.02
+										Y=0.01
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=0.287
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=1.12
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=2.38
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=4.01
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=5.97
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=8.25
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=10.8
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=13.6
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=16.7
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=20.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.1
+										Y=24.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.2
+										Y=29.1
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.3
+										Y=34.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.4
+										Y=40.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.5
+										Y=47.7
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='1kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=0.0125
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=1.24
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=4.6
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=9.75
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=16.1
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=23.7
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=33.4
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.7
+										Y=44.8
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.8
+										Y=58.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.9
+										Y=74
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1
+										Y=93
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=1.03
+										Y=100
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='2kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=0.046
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=3.9
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=13.7
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.3
+										Y=28.1
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.4
+										Y=46.5
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.5
+										Y=69.7
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.6
+										Y=99
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='5kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=0.225
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.05
+										Y=4.65
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=16.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.15
+										Y=32.6
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.2
+										Y=54.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.29
+										Y=100
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+							$begin 'OneCurve'
+								Frequency='10kHz'
+								$begin 'Coordinates'
+									$begin 'Coordinate'
+										X=0
+										Y=0
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.01
+										Y=0.7
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.05
+										Y=14.3
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.1
+										Y=47.5
+									$end 'Coordinate'
+									$begin 'Coordinate'
+										X=0.15
+										Y=94
+									$end 'Coordinate'
+								$end 'Coordinates'
+							$end 'OneCurve'
+						$end 'AllCurves'
+					$end 'CoreLossMultiCurveData'
+				$end 'AttachedData'
+				$begin 'permeability'
+					property_type='nonlinear'
+					BType='normal'
+					HUnit='A_per_meter'
+					BUnit='tesla'
+					$begin 'BHCoordinates'
+						$begin 'Coordinate'
+							X=0
+							Y=0
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=10
+							Y=0.02
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=17.2
+							Y=0.0499
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=23.4
+							Y=0.0998
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=27.9
+							Y=0.1497
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=31.7
+							Y=0.1995
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=34.8
+							Y=0.2494
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=37.5
+							Y=0.2993
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=40.1
+							Y=0.3492
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=42.6
+							Y=0.3991
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=45
+							Y=0.4489
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=47.4
+							Y=0.4988
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=49.8
+							Y=0.5488
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=52.2
+							Y=0.5986
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=54.7
+							Y=0.6485
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=57.5
+							Y=0.6983
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=60.6
+							Y=0.7482
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=64.3
+							Y=0.7981
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=68.3
+							Y=0.848
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=72.9
+							Y=0.8979
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=78.2
+							Y=0.9477
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=84.4
+							Y=0.9976
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=91.9
+							Y=1.0475
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=101
+							Y=1.0974
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=112
+							Y=1.1473
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=126
+							Y=1.1972
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=145
+							Y=1.2471
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=173
+							Y=1.297
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=214
+							Y=1.3469
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=282
+							Y=1.3969
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=408
+							Y=1.4469
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=681
+							Y=1.4971
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1260
+							Y=1.5477
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=1990
+							Y=1.5985
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=2810
+							Y=1.6494
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=3860
+							Y=1.7006
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=5000
+							Y=1.7413
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=5310
+							Y=1.7516
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=7340
+							Y=1.8069
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=10000
+							Y=1.856
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=10400
+							Y=1.8631
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=15000
+							Y=1.9188
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=22900
+							Y=1.9788
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=41400
+							Y=2.052
+						$end 'Coordinate'
+						$begin 'Coordinate'
+							X=80000
+							Y=2.1305
+						$end 'Coordinate'
+					$end 'BHCoordinates'
+				$end 'permeability'
+				conductivity='2439024'
+				$begin 'magnetic_coercivity'
+					property_type='VectorProperty'
+					Magnitude='0A_per_meter'
+					DirComp1='1'
+					DirComp2='0'
+					DirComp3='0'
+				$end 'magnetic_coercivity'
+				$begin 'core_loss_type'
+					property_type='ChoiceProperty'
+					Choice='Electrical Steel'
+				$end 'core_loss_type'
+				core_loss_kh='265.176229700701'
+				core_loss_kc='0.168093543387139'
+				core_loss_ke='6.36911520597961'
+				core_loss_kdc='0'
+				mass_density='7700'
+				ModTime=1528036554
+				Library='JFE_Steel'
+				LibLocation='Project'
+				ModSinceLib=true
+			$end 'JFE_Steel_35JNE300'
+		$end 'Materials'
+		$begin 'SurfaceMaterials'
+		$end 'SurfaceMaterials'
+		$begin 'Scripts'
+		$end 'Scripts'
+		$begin 'Symbols'
+			$begin 'RMxprtDesign1'
+				ModTime=1528023221
+				Library=''
+				ModSinceLib=false
+				LibLocation='Project'
+				HighestLevel=1
+				Normalize=true
+				InitialLevels(0, 1)
+				$begin 'Graphics'
+					Rect(0, 0, 0, 0, 0.00254, 0.00254, 0.00508, 0.00508, 0, 0, 0)
+					Rect(0, 1, 0, 0, 0.000423333333333333, 0.00254, 0.000423333333333333, 0.000423333333333334, 0, 0, 0)
+				$end 'Graphics'
+			$end 'RMxprtDesign1'
+		$end 'Symbols'
+		$begin 'DefInfo'
+			RMxprtDesign1(0, 0, '', 1528023221, '', 'RMxprtDesign1', '', '', '', '', '', 'Design.bmp', '', 'Project', '', '', 1528023221, '')
+		$end 'DefInfo'
+		$begin 'Compdefs'
+			$begin 'RMxprtDesign1'
+				Library=''
+				Refbase='U'
+				NumParts=1
+				ModSinceLib=true
+				$begin 'Properties'
+					TextProp('Representation', 'SRD', '', 'RMxprtDesign1')
+					TextProp('Owner', 'SRD', '', 'RMxprt')
+				$end 'Properties'
+				CompExtID=6
+				$begin 'Parameters'
+					MenuProp('CoSimulator', 'D', '', 'DefaultNetlist', 0)
+					ButtonProp('CosimDefinition', 'D', '', '', 'Edit', 40501, ButtonPropClientData())
+				$end 'Parameters'
+				$begin 'CosimDefinitions'
+					$begin 'CosimDefinition'
+						CosimulatorType=4
+						CosimDefName='DefaultNetlist'
+						IsDefinition=true
+						Connect=true
+						Data()
+						GRef()
+					$end 'CosimDefinition'
+					DefaultCosim='DefaultNetlist'
+				$end 'CosimDefinitions'
+			$end 'RMxprtDesign1'
+		$end 'Compdefs'
+	$end 'Definitions'
+	DesignIDServer=6
+	MoveBackwards=false
+	$begin 'RMxprtDesign'
+		RepRewriteV2=true
+		Name='RMxprtDesign1'
+		DesignID=0
+		'Steel Threshold'=100
+		'Conductor Threshold'=100000
+		'Excel Template Path'=''
+		UDDEnabled=false
+		$begin 'OutputVariable'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'OutputVariable'
+		$begin 'MachineSetup'
+			$begin 'DesignDatasets'
+				NextUniqueID=0
+				MoveBackwards=false
+				DatasetType='DesignDatasetType'
+				$begin 'DatasetDefinitions'
+				$end 'DatasetDefinitions'
+			$end 'DesignDatasets'
+			VariableOrders[0:]
+			'Machine Type'='Three Phase Induction Motor'
+			Units='mm'
+			$begin 'Round Wire Data'
+				$begin '4/0'
+					Diameter='11.684mm'
+					Wrap='0mm'
+				$end '4/0'
+				$begin '3/0'
+					Diameter='10.404mm'
+					Wrap='0mm'
+				$end '3/0'
+				$begin '2/0'
+					Diameter='9.266mm'
+					Wrap='0mm'
+				$end '2/0'
+				$begin '1/0'
+					Diameter='8.252mm'
+					Wrap='0mm'
+				$end '1/0'
+				$begin '1/0.5'
+					Diameter='7.788mm'
+					Wrap='0mm'
+				$end '1/0.5'
+				$begin '1'
+					Diameter='7.348mm'
+					Wrap='0mm'
+				$end '1'
+				$begin '1.5'
+					Diameter='6.934mm'
+					Wrap='0mm'
+				$end '1.5'
+				$begin '2'
+					Diameter='6.543mm'
+					Wrap='0mm'
+				$end '2'
+				$begin '2.5'
+					Diameter='6.175mm'
+					Wrap='0mm'
+				$end '2.5'
+				$begin '3'
+					Diameter='5.827mm'
+					Wrap='0mm'
+				$end '3'
+				$begin '3.5'
+					Diameter='5.499mm'
+					Wrap='0mm'
+				$end '3.5'
+				$begin '4'
+					Diameter='5.189mm'
+					Wrap='0mm'
+				$end '4'
+				$begin '4.5'
+					Diameter='4.897mm'
+					Wrap='0mm'
+				$end '4.5'
+				$begin '5'
+					Diameter='4.62mm'
+					Wrap='0mm'
+				$end '5'
+				$begin '5.5'
+					Diameter='4.361mm'
+					Wrap='0mm'
+				$end '5.5'
+				$begin '6'
+					Diameter='4.115mm'
+					Wrap='0mm'
+				$end '6'
+				$begin '6.5'
+					Diameter='3.884mm'
+					Wrap='0mm'
+				$end '6.5'
+				$begin '7'
+					Diameter='3.665mm'
+					Wrap='0mm'
+				$end '7'
+				$begin '7.5'
+					Diameter='3.459mm'
+					Wrap='0mm'
+				$end '7.5'
+				$begin '8'
+					Diameter='3.264mm'
+					Wrap='0mm'
+				$end '8'
+				$begin '8.5'
+					Diameter='3.081mm'
+					Wrap='0mm'
+				$end '8.5'
+				$begin '9'
+					Diameter='2.906mm'
+					Wrap='0mm'
+				$end '9'
+				$begin '9.5'
+					Diameter='2.743mm'
+					Wrap='0mm'
+				$end '9.5'
+				$begin '10'
+					Diameter='2.588mm'
+					Wrap='0mm'
+				$end '10'
+				$begin '10.5'
+					Diameter='2.443mm'
+					Wrap='0mm'
+				$end '10.5'
+				$begin '11'
+					Diameter='2.304mm'
+					Wrap='0mm'
+				$end '11'
+				$begin '11.5'
+					Diameter='2.174mm'
+					Wrap='0mm'
+				$end '11.5'
+				$begin '12'
+					Diameter='2.052mm'
+					Wrap='0mm'
+				$end '12'
+				$begin '12.5'
+					Diameter='1.938mm'
+					Wrap='0mm'
+				$end '12.5'
+				$begin '13'
+					Diameter='1.829mm'
+					Wrap='0mm'
+				$end '13'
+				$begin '13.5'
+					Diameter='1.725mm'
+					Wrap='0mm'
+				$end '13.5'
+				$begin '14'
+					Diameter='1.628mm'
+					Wrap='0mm'
+				$end '14'
+				$begin '14.5'
+					Diameter='1.537mm'
+					Wrap='0mm'
+				$end '14.5'
+				$begin '15'
+					Diameter='1.45mm'
+					Wrap='0mm'
+				$end '15'
+				$begin '15.5'
+					Diameter='1.369mm'
+					Wrap='0mm'
+				$end '15.5'
+				$begin '16'
+					Diameter='1.29mm'
+					Wrap='0mm'
+				$end '16'
+				$begin '16.5'
+					Diameter='1.219mm'
+					Wrap='0mm'
+				$end '16.5'
+				$begin '17'
+					Diameter='1.151mm'
+					Wrap='0mm'
+				$end '17'
+				$begin '17.5'
+					Diameter='1.085mm'
+					Wrap='0mm'
+				$end '17.5'
+				$begin '18'
+					Diameter='1.024mm'
+					Wrap='0mm'
+				$end '18'
+				$begin '18.5'
+					Diameter='0.965mm'
+					Wrap='0mm'
+				$end '18.5'
+				$begin '19'
+					Diameter='0.912mm'
+					Wrap='0mm'
+				$end '19'
+				$begin '19.5'
+					Diameter='0.861mm'
+					Wrap='0mm'
+				$end '19.5'
+				$begin '20'
+					Diameter='0.813mm'
+					Wrap='0mm'
+				$end '20'
+				$begin '20.5'
+					Diameter='0.767mm'
+					Wrap='0mm'
+				$end '20.5'
+				$begin '21'
+					Diameter='0.724mm'
+					Wrap='0mm'
+				$end '21'
+				$begin '21.5'
+					Diameter='0.683mm'
+					Wrap='0mm'
+				$end '21.5'
+				$begin '22'
+					Diameter='0.643mm'
+					Wrap='0mm'
+				$end '22'
+				$begin '22.5'
+					Diameter='0.607mm'
+					Wrap='0mm'
+				$end '22.5'
+				$begin '23'
+					Diameter='0.574mm'
+					Wrap='0mm'
+				$end '23'
+				$begin '23.5'
+					Diameter='0.541mm'
+					Wrap='0mm'
+				$end '23.5'
+				$begin '24'
+					Diameter='0.511mm'
+					Wrap='0mm'
+				$end '24'
+				$begin '24.5'
+					Diameter='0.483mm'
+					Wrap='0mm'
+				$end '24.5'
+				$begin '25'
+					Diameter='0.455mm'
+					Wrap='0mm'
+				$end '25'
+				$begin '25.5'
+					Diameter='0.429mm'
+					Wrap='0mm'
+				$end '25.5'
+				$begin '26'
+					Diameter='0.404mm'
+					Wrap='0mm'
+				$end '26'
+				$begin '26.5'
+					Diameter='0.381mm'
+					Wrap='0mm'
+				$end '26.5'
+				$begin '27'
+					Diameter='0.361mm'
+					Wrap='0mm'
+				$end '27'
+				$begin '27.5'
+					Diameter='0.34mm'
+					Wrap='0mm'
+				$end '27.5'
+				$begin '28'
+					Diameter='0.32mm'
+					Wrap='0mm'
+				$end '28'
+				$begin '28.5'
+					Diameter='0.302mm'
+					Wrap='0mm'
+				$end '28.5'
+				$begin '29'
+					Diameter='0.287mm'
+					Wrap='0mm'
+				$end '29'
+				$begin '29.5'
+					Diameter='0.269mm'
+					Wrap='0mm'
+				$end '29.5'
+				$begin '30'
+					Diameter='0.254mm'
+					Wrap='0mm'
+				$end '30'
+				$begin '30.5'
+					Diameter='0.239mm'
+					Wrap='0mm'
+				$end '30.5'
+				$begin '31'
+					Diameter='0.226mm'
+					Wrap='0mm'
+				$end '31'
+				$begin '31.5'
+					Diameter='0.213mm'
+					Wrap='0mm'
+				$end '31.5'
+				$begin '32'
+					Diameter='0.203mm'
+					Wrap='0mm'
+				$end '32'
+				$begin '32.5'
+					Diameter='0.19mm'
+					Wrap='0mm'
+				$end '32.5'
+				$begin '33'
+					Diameter='0.18mm'
+					Wrap='0mm'
+				$end '33'
+				$begin '33.5'
+					Diameter='0.17mm'
+					Wrap='0mm'
+				$end '33.5'
+				$begin '34'
+					Diameter='0.16mm'
+					Wrap='0mm'
+				$end '34'
+				$begin '34.5'
+					Diameter='0.15mm'
+					Wrap='0mm'
+				$end '34.5'
+				$begin '35'
+					Diameter='0.142mm'
+					Wrap='0mm'
+				$end '35'
+				$begin '35.5'
+					Diameter='0.135mm'
+					Wrap='0mm'
+				$end '35.5'
+				$begin '36'
+					Diameter='0.127mm'
+					Wrap='0mm'
+				$end '36'
+				$begin '36.5'
+					Diameter='0.119mm'
+					Wrap='0mm'
+				$end '36.5'
+				$begin '37'
+					Diameter='0.114mm'
+					Wrap='0mm'
+				$end '37'
+				$begin '37.5'
+					Diameter='0.107mm'
+					Wrap='0mm'
+				$end '37.5'
+				$begin '38'
+					Diameter='0.102mm'
+					Wrap='0mm'
+				$end '38'
+				$begin '38.5'
+					Diameter='0.094mm'
+					Wrap='0mm'
+				$end '38.5'
+				$begin '39'
+					Diameter='0.089mm'
+					Wrap='0mm'
+				$end '39'
+				$begin '39.5'
+					Diameter='0.084mm'
+					Wrap='0mm'
+				$end '39.5'
+				$begin '40'
+					Diameter='0.079mm'
+					Wrap='0mm'
+				$end '40'
+				$begin '40.5'
+					Diameter='0.076mm'
+					Wrap='0mm'
+				$end '40.5'
+				$begin '41'
+					Diameter='0.071mm'
+					Wrap='0mm'
+				$end '41'
+				$begin '41.5'
+					Diameter='0.066mm'
+					Wrap='0mm'
+				$end '41.5'
+				$begin '42'
+					Diameter='0.064mm'
+					Wrap='0mm'
+				$end '42'
+				$begin '42.5'
+					Diameter='0.061mm'
+					Wrap='0mm'
+				$end '42.5'
+				$begin '43'
+					Diameter='0.056mm'
+					Wrap='0mm'
+				$end '43'
+				$begin '43.5'
+					Diameter='0.053mm'
+					Wrap='0mm'
+				$end '43.5'
+				$begin '44'
+					Diameter='0.051mm'
+					Wrap='0mm'
+				$end '44'
+				$begin '44.5'
+					Diameter='0.048mm'
+					Wrap='0mm'
+				$end '44.5'
+				$begin '45'
+					Diameter='0.0447mm'
+					Wrap='0mm'
+				$end '45'
+				$begin '46'
+					Diameter='0.0399mm'
+					Wrap='0mm'
+				$end '46'
+				$begin '47'
+					Diameter='0.0356mm'
+					Wrap='0mm'
+				$end '47'
+				$begin '48'
+					Diameter='0.0315mm'
+					Wrap='0mm'
+				$end '48'
+				$begin '49'
+					Diameter='0.0282mm'
+					Wrap='0mm'
+				$end '49'
+				$begin '50'
+					Diameter='0.0251mm'
+					Wrap='0mm'
+				$end '50'
+				$begin '51'
+					Diameter='0.0224mm'
+					Wrap='0mm'
+				$end '51'
+				$begin '52'
+					Diameter='0.0198mm'
+					Wrap='0mm'
+				$end '52'
+			$end 'Round Wire Data'
+			$begin 'Rectangle Wire Data'
+				'Max(B/A)'=13
+				'Min(B/A)'=1.1
+				SkipOne=true
+				$begin 'AR Data'
+					A='1.02mm'
+					ChamferRadius='0.5mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='1.15mm'
+					ChamferRadius='0.5mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='1.29mm'
+					ChamferRadius='0.5mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='1.45mm'
+					ChamferRadius='0.5mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='1.63mm'
+					ChamferRadius='0.5mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='1.83mm'
+					ChamferRadius='0.5mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='2.05mm'
+					ChamferRadius='0.5mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='2.3mm'
+					ChamferRadius='0.5mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='2.59mm'
+					ChamferRadius='0.67mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='2.91mm'
+					ChamferRadius='0.67mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='3.26mm'
+					ChamferRadius='0.8mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='3.66mm'
+					ChamferRadius='0.8mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='4.12mm'
+					ChamferRadius='1mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='4.62mm'
+					ChamferRadius='1mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='5.19mm'
+					ChamferRadius='1mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='5.83mm'
+					ChamferRadius='1mm'
+				$end 'AR Data'
+				$begin 'AR Data'
+					A='6.54mm'
+					ChamferRadius='1mm'
+				$end 'AR Data'
+				$begin 'B Data'
+					B='2.05mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='2.18mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='2.3mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='2.44mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='2.59mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='2.74mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='2.91mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='3.08mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='3.26mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='3.46mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='3.66mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='3.88mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='4.12mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='4.36mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='4.62mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='4.9mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='5.19mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='5.5mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='5.83mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='6.18mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='6.54mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='6.93mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='7.35mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='7.79mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='8.25mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='8.74mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='9.27mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='9.82mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='10.4mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='11.03mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='11.68mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='12.38mm'
+				$end 'B Data'
+				$begin 'B Data'
+					B='13.12mm'
+				$end 'B Data'
+			$end 'Rectangle Wire Data'
+			NextUniqueID=9
+			MoveBackwards=false
+			$begin 'Machine'
+				DataType='General Data'
+				DataLevel=0
+				DataOrder=0
+				DataID=0
+				ParentID=-1
+				DataName='Machine'
+				FrictionLoss='300W'
+				WindLoss='300W'
+				ReferenceSpeed='742rpm'
+				NumberOfPoles=8
+				StrayLossFactor='0.015'
+			$end 'Machine'
+			$begin 'Stator'
+				DataType='Stator'
+				DataLevel=1
+				DataOrder=1
+				DataID=1
+				ParentID=-1
+				DataName='Stator'
+				SkewWidth='0'
+				NumberOfSlots=48
+				LaminationSectors=0
+				PressBoardThickness='0mm'
+				OuterDiameter='639.5mm'
+				InnerDiameter='509mm'
+				Length='315mm'
+				StackingFactor=0.96
+				SteelType='JFE_Steel_35JNE300'
+				SlotType='3'
+			$end 'Stator'
+			$begin 'Rotor'
+				DataType='Rotor'
+				DataLevel=1
+				DataOrder=2
+				DataID=2
+				ParentID=-1
+				DataName='Rotor'
+				OuterDiameter='508.6mm'
+				InnerDiameter='250mm'
+				Length='315mm'
+				SteelType='JFE_Steel_35JNE300'
+				NumberOfSlots=64
+				SlotType='4'
+				SkewWidth='1'
+				CastRotor=false
+				HalfSlot=false
+				DoubleCage=false
+				BottomSlotType='UserDefinedSlot'
+				StackingFactor=0.96
+			$end 'Rotor'
+			$begin 'Shaft'
+				DataType='Shaft'
+				DataLevel=1
+				DataOrder=3
+				DataID=3
+				ParentID=-1
+				DataName='Shaft'
+				MagneticShaft=false
+			$end 'Shaft'
+			$begin 'Slot'
+				DataType='Slot'
+				DataLevel=2
+				DataOrder=1
+				DataID=4
+				ParentID=1
+				DataName='Slot'
+				Hs0='3mm'
+				Hs1='0mm'
+				Hs2='25.3mm'
+				Bs0='6mm'
+				Bs1='17.5mm'
+				Bs2='17.5mm'
+				Rs='0mm'
+				AutoDesign=false
+				ParallelTooth=true
+				ToothWidth='17.5mm'
+			$end 'Slot'
+			$begin 'Winding'
+				DataType='Winding'
+				DataLevel=2
+				DataOrder=2
+				DataID=5
+				ParentID=1
+				DataName='Winding'
+				WindingType='Whole-Coiled'
+				WindingLayers='1'
+				InputHalfTurnLength=false
+				HalfTurnLength='0mm'
+				ParallelBranches=1
+				ConductorsPerSlot='4'
+				CoilPitch=0
+				EndAdjustment='0mm'
+				BaseInnerRadius='0mm'
+				TipInnerDiameter='0mm'
+				EndClearance='0mm'
+				CoilWrap='0mm'
+				SlotLiner='0.05mm'
+				WedgeThickness='0mm'
+				LayerInsulation='0mm'
+				BottomInsulation='0mm'
+				LimitedFillFactor='0.75'
+				WdgNumberofPriodicMultipler=1
+				WdgConstantPitch=false
+				WdgConstantTurns=false
+				Wdgcoil_turns[0:]
+				Wdgcoil_name[0:]
+				Wdgcoil_go[0:]
+				Wdgcoil_re[0:]
+				NumberOfStrands='10'
+				WireWrap='0mm'
+				InterturnInsulation='0mm'
+				WireDiameter='2.906mm'
+				WireWidth='0mm'
+				WireThickness='0mm'
+				Gauge='9'
+				IsRectWireType=false
+				MixedDiamter[0:]
+				MixedNumber[0:]
+				MixedWidth[0:]
+				MixedThickness[0:]
+				WireFillet[0:]
+			$end 'Winding'
+			$begin 'Slot'
+				DataType='Slot'
+				DataLevel=2
+				DataOrder=1
+				DataID=6
+				ParentID=2
+				DataName='Slot'
+				Hs0='1.5mm'
+				Hs1='1.5mm'
+				Hs2='60mm'
+				Bs0='1.1mm'
+				Bs1='10mm'
+				Bs2='4mm'
+				Rs='1.55mm'
+				Hs01='1mm'
+			$end 'Slot'
+			$begin 'Winding'
+				DataType='Winding'
+				DataLevel=2
+				DataOrder=3
+				DataID=7
+				ParentID=2
+				DataName='Winding'
+				BarConductorType='aluminum'
+				EndLength='20mm'
+				EndRingWidth='20mm'
+				EndRingHeight='20mm'
+				EndRingConductorType='copper'
+			$end 'Winding'
+		$end 'MachineSetup'
+		$begin 'ParameterSetup'
+		$end 'ParameterSetup'
+		$begin 'AnalysisSetup'
+			$begin 'SolveSetups'
+				NextUniqueID=1
+				MoveBackwards=false
+				$begin 'Setup1'
+					ID=0
+					SetupType='TPIM'
+					Enabled=true
+					RatedOutputPower='250kW'
+					RatedVoltage='400V'
+					RatedSpeed='742rpm'
+					OperatingTemperature='25cel'
+					OperationType='Motor'
+					LoadType='ConstSpeed'
+					Frequency='50Hz'
+					WindingConnection=0
+				$end 'Setup1'
+			$end 'SolveSetups'
+		$end 'AnalysisSetup'
+		$begin 'Optimetrics'
+			$begin 'OptimetricsSetups'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'OptimetricsSetups'
+		$end 'Optimetrics'
+		$begin 'Solutions'
+		$end 'Solutions'
+		$begin 'SolutionManager'
+			$begin 'SimSetup'
+				TypeName='BaseSetup'
+				ID=32
+				Name='Setup1'
+				$begin 'Solution'
+					ID=33
+					Name='Performance'
+					$begin 'SimDataExtractor'
+						$begin 'QuantityIDs'
+							NextUniqueID=0
+							MoveBackwards=false
+							IDMap()
+						$end 'QuantityIDs'
+					$end 'SimDataExtractor'
+				$end 'Solution'
+			$end 'SimSetup'
+			$begin 'Version ID Map'
+				V=392
+				$begin 'Setup'
+					N='Setup1'
+					V=392
+					Soln(N='Performance', V=392)
+				$end 'Setup'
+			$end 'Version ID Map'
+			$begin 'ID Map'
+				$begin 'Setup'
+					N='Setup1'
+					I=32
+					Soln(N='Performance', I=33)
+				$end 'Setup'
+			$end 'ID Map'
+		$end 'SolutionManager'
+		$begin 'UserDefinedSolutionMgr'
+			NextUniqueID=1000000
+			MoveBackwards=false
+		$end 'UserDefinedSolutionMgr'
+		$begin 'DatasetSolutionMgr'
+			NextUniqueID=2000000
+			MoveBackwards=false
+		$end 'DatasetSolutionMgr'
+		Notes=$begin_cdata$ $end_cdata$
+		$begin 'AnimationSetups'
+		$end 'AnimationSetups'
+		CacheHeaderFile='HDR25E7671615280253814.tmp'
+	$end 'RMxprtDesign'
+	$begin 'DataInstances'
+		DesignEditor='TopLevel'
+		Refdes('2', 'U3')
+		Refdes('0', 'U1')
+		$begin 'CompInstances'
+			$begin 'Compinst'
+				ID='0'
+				Status='Status'
+				CompName='RMxprtDesign1'
+				GatesInUse()
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '0')
+				$end 'Properties'
+			$end 'Compinst'
+		$end 'CompInstances'
+		$begin 'Instance'
+			DesignEditor='RMxprtDesign1'
+			ID='0'
+			$begin 'RMxprtDesignInstance'
+				DesignInstanceID=1
+				$begin 'WindowPosition'
+					$begin 'EditorWindow'
+						Circuit(Machine(Frame(ActivePage('Main', View(WindowPos(3, -1, -1, -6, -29, 0, 0, 1232, 473))))))
+					$end 'EditorWindow'
+				$end 'WindowPosition'
+				$begin 'ReportSetup'
+					$begin 'ReportManager'
+						$begin 'Reports'
+						$end 'Reports'
+						NextUniqueID=0
+						MoveBackwards=false
+						$begin 'NextVersID'
+							NextUniqueID=0
+							MoveBackwards=false
+						$end 'NextVersID'
+					$end 'ReportManager'
+					$begin 'Reports'
+					$end 'Reports'
+					$begin 'ReportsWindowInfoList'
+					$end 'ReportsWindowInfoList'
+				$end 'ReportSetup'
+				$begin 'Properties'
+				$end 'Properties'
+				$begin 'UserDefinedDocument'
+					$begin 'Data'
+					$end 'Data'
+				$end 'UserDefinedDocument'
+			$end 'RMxprtDesignInstance'
+		$end 'Instance'
+		$begin 'SODInfo'
+			$begin 'RMxprtDesign1'
+				$begin 'CosimDefinition'
+					CosimDefName='DefaultNetlist'
+					DefinitionCompName=''
+					$begin 'SODInstanceMap'
+					$end 'SODInstanceMap'
+					SODComponentList()
+				$end 'CosimDefinition'
+			$end 'RMxprtDesign1'
+		$end 'SODInfo'
+	$end 'DataInstances'
+	$begin 'WBSystemIDToDesignInstanceIDMap'
+	$end 'WBSystemIDToDesignInstanceIDMap'
+	$begin 'WBSysIDSysDetails'
+	$end 'WBSysIDSysDetails'
+	$begin 'WBConnIDConnDetails'
+	$end 'WBConnIDConnDetails'
+	$begin 'WBMaterialGuidDetails'
+		WBMaterialGuidMap()
+	$end 'WBMaterialGuidDetails'
+$end 'AnsoftProject'
+$begin 'AllReferencedFilesForProject'
+$end 'AllReferencedFilesForProject'
+$begin 'ProjectPreview'
+	IsEncrypted=false
+	Thumbnail64=''
+	$begin 'DesignInfo'
+		DesignName='RMxprtDesign1'
+		Notes=''
+		Factory='RMxprt'
+		IsSolved=true
+		'Nominal Setups'[1: 'Setup1']
+		'Nominal Setup Types'[1: '']
+		'Optimetrics Setups'[0:]
+		'Optimetrics Experiment Types'[0:]
+		Image64=''
+	$end 'DesignInfo'
+$end 'ProjectPreview'

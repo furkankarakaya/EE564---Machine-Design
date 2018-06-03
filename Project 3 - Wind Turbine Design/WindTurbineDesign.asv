@@ -54,7 +54,7 @@ Nphase = round((LineVoltage/sqrt(2) *0.9) / (4.44*FluxPerPole*k_w(1)*Freq));
 Nslot = round(Nphase * 2 /(Qs/Phase));
 
 J = 7; %Arms/mm^2 - Fan cooled
-Eff = 0.95;
+Eff = 0.9;
 S = Po/PF/Eff; %VA
 Irms = S/(sqrt(3)*LineVoltage); %Arms
 Awire = round(Irms/J,1); % mm^2
@@ -68,7 +68,7 @@ h4 = SlotArea/b4; %% mm
 
 YokeFluxDensity = 1.5; %T
 hys = round(FluxPerPole / (2*kFE*AxialLength*YokeFluxDensity),3); %m
-OuterDiameter = BoreDiameter + 2*hys + 2*h4*1e-3; %m
+OuterDiameter = BoreDiameter + 2*hys; %m
 b1 = round(2*AvailableWireDia); %mm
 h1 = b1/2; %mm
 
@@ -84,5 +84,7 @@ MagnetizingCurrent = (MMFpeak/sqrt(2)) *(2*pi*PoleNumber) / (Phase * 4 * k_w(1) 
 Lm_ph = 2*Mu0*BoreDiameter * Lprime * (k_w(1) * Nphase)^2 / (pi * PolePair^2 * AirGapEff * 1e-3); %H
 Lm_total = Phase * Lm_ph /2; %H
 Lu = Mu0 * Lprime * Nslot^2 *(h4/(3*b4) + h1/4); %H
-Lu_ph = Qs*Lu / (ParallelConductors^2 * Phase); %H
-R_ph = Nphase * (2*AxialLength + 2.8*BoreDiameter + 0.4) /(5.96*1e7 * ParallelConductors * AvailableWireArea *1e-6); %ohm
+Lu_ph = Qs*Lu / (ParallelConductors^2 * Phase);
+
+
+
