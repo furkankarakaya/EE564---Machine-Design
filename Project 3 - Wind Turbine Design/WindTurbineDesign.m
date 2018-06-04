@@ -87,3 +87,102 @@ Lm_total = Phase * Lm_ph /2; %H
 Lu = Mu0 * Lprime * Nslot^2 *(h4/(3*b4) + h1/4); %H
 Lu_ph = Qs*Lu / (ParallelConductors^2 * Phase); %H
 R_ph = Nphase * (2*AxialLength + 2.8*BoreDiameter + 0.4) /(5.96*1e7 * ParallelConductors * AvailableWireArea *1e-6); %ohm
+%% Windings - MMFs
+A = [1 1 0 0 0 0 -1 -1 0 0 0 0];
+B = [0 0 0 0 1 1 0 0 0 0 -1 -1];
+C = [0 0 -1 -1 0 0 0 0 1 1 0 0];
+
+% for Ia = 1, Ib = -0.5 , Ic = -0.5, N = 1
+Ia = 1;
+Ib = -0.5;
+Ic = -0.5;
+for i=1:12
+    if i~=1
+    MMF(i) = Ia*A(i) + Ib*B(i) + Ic*C(i) + MMF(i-1);
+    else
+    MMF(i) = Ia*A(i) + Ib*B(i) + Ic*C(i);
+    end
+end
+MMF_max = max(MMF);
+MMF_min = min(MMF);
+MMF_peak = (MMF_max - MMF_min)/2;
+MMF_shift = MMF_peak - MMF_max;
+for i=1:12
+    MMF(i) = MMF(i) + MMF_shift;
+end
+f1 = figure;
+hold all
+grid on
+ax = gca;
+%set(gca, 'XScale', 'log');
+title('MMF for I_A = 1, I_B = -0.5, I_C = -0.5 and N=1','FontSize',12,'FontWeight','bold','Color','k');
+ylabel('MMF(Amperes)','FontSize',12,'FontWeight','bold','Color','k');
+xlabel('Electrical Degree','FontSize',12,'FontWeight','bold','Color','k');
+ax.FontSize = 12;
+ax.XTick = [0:60:360];
+bar(0:30:330, MMF,'LineWidth',3.0,'FaceColor','g');
+hold off
+% saveas(f1, 'B vs H.jpg');
+% for Ia = -0.5, Ib = 1 , Ic = -0.5, N = 1
+clear MMF;
+Ia = -0.5;
+Ib = 1;
+Ic = -0.5;
+for i=1:12
+    if i~=1
+    MMF(i) = Ia*A(i) + Ib*B(i) + Ic*C(i) + MMF(i-1);
+    else
+    MMF(i) = Ia*A(i) + Ib*B(i) + Ic*C(i);
+    end
+end
+MMF_max = max(MMF);
+MMF_min = min(MMF);
+MMF_peak = (MMF_max - MMF_min)/2;
+MMF_shift = MMF_peak - MMF_max;
+for i=1:12
+    MMF(i) = MMF(i) + MMF_shift;
+end
+f1 = figure;
+hold all
+grid on
+ax = gca;
+%set(gca, 'XScale', 'log');
+title('MMF for I_A = -0.5, I_B = 1, I_C = -0.5 and N=1','FontSize',12,'FontWeight','bold','Color','k');
+ylabel('MMF(Amperes)','FontSize',12,'FontWeight','bold','Color','k');
+xlabel('Electrical Degree','FontSize',12,'FontWeight','bold','Color','k');
+ax.FontSize = 12;
+ax.XTick = [0:60:360];
+bar(0:30:330, MMF,'LineWidth',3.0,'FaceColor','y');
+hold off
+
+% for Ia = -0.5, Ib = -0.5 , Ic = 1, N = 1
+clear MMF;
+Ia = -0.5;
+Ib = -0.5;
+Ic = 1;
+for i=1:12
+    if i~=1
+    MMF(i) = Ia*A(i) + Ib*B(i) + Ic*C(i) + MMF(i-1);
+    else
+    MMF(i) = Ia*A(i) + Ib*B(i) + Ic*C(i);
+    end
+end
+MMF_max = max(MMF);
+MMF_min = min(MMF);
+MMF_peak = (MMF_max - MMF_min)/2;
+MMF_shift = MMF_peak - MMF_max;
+for i=1:12
+    MMF(i) = MMF(i) + MMF_shift;
+end
+f1 = figure;
+hold all
+grid on
+ax = gca;
+%set(gca, 'XScale', 'log');
+title('MMF for I_A = -0.5, I_B = -0.5, I_C = 1 and N=1','FontSize',12,'FontWeight','bold','Color','k');
+ylabel('MMF(Amperes)','FontSize',12,'FontWeight','bold','Color','k');
+xlabel('Electrical Degree','FontSize',12,'FontWeight','bold','Color','k');
+ax.FontSize = 12;
+ax.XTick = [0:60:360];
+bar(0:30:330, MMF,'LineWidth',3.0,'FaceColor','c');
+hold off
