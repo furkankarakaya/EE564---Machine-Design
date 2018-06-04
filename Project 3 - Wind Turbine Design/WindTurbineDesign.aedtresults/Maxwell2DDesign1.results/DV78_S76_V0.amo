@@ -1,0 +1,52 @@
+$begin 'ConEngineContinueData'
+	$begin 'MeshSettings'
+		$begin 'GlobalSurfApproximation'
+			CurvedSurfaceApproxChoice='UseSlider'
+			SliderMeshSettings=5
+		$end 'GlobalSurfApproximation'
+		$begin 'GlobalModelRes'
+			UseAutoLength=true
+		$end 'GlobalModelRes'
+		MeshMethod='AnsoftClassic'
+	$end 'MeshSettings'
+	$begin 'MeshOperations'
+		NextUniqueID=0
+		MoveBackwards=false
+		$begin 'Length_Coil'
+			RefineInside=true
+			ID=0
+			Type='LengthBased'
+			IsComponent=false
+			Enabled=true
+			Objects(1762, 1774, 1785, 1796, 1807, 1818, 1829, 1840, 1851, 1862, 1873, 1884, 1895, 1906, 1917, 1928, 1939, 1950, 1961, 1972, 1983, 1994, 2005, 2016, 2027, 2038, 2049, 2060, 2071, 2082, 2093, 2104, 2115, 2126, 2137, 2148, 2159, 2170, 2181, 2192, 2203, 2214, 2225, 2236, 2247, 2258, 2269, 2280)
+			RestrictElem=false
+			NumMaxElem='1000'
+			RestrictLength=true
+			MaxLength='12.4309mm'
+		$end 'Length_Coil'
+		$begin 'Length_Bar'
+			RefineInside=true
+			ID=1
+			Type='LengthBased'
+			IsComponent=false
+			Enabled=true
+			Objects(6202, 10116, 10117, 10118, 10119, 10120, 10121, 10122, 10123, 10124, 10125, 10126, 10127, 10128, 10129, 10130, 10131, 10132, 10133, 10134, 10135, 10136, 10137, 10138, 10139, 10140, 10141, 10142, 10143, 10144, 10145, 10146, 10147, 10148, 10149, 10150, 10151, 10152, 10153, 10154, 10155, 10156, 10157, 10158, 10159, 10160, 10161, 10162, 10163, 10164, 10165, 10166, 10167, 10168, 10169, 10170, 10171, 10172, 10173, 10174, 10175)
+			RestrictElem=false
+			NumMaxElem='1000'
+			RestrictLength=true
+			MaxLength='4mm'
+		$end 'Length_Bar'
+		$begin 'Length_Main'
+			RefineInside=true
+			ID=4
+			Type='LengthBased'
+			IsComponent=false
+			Enabled=true
+			Objects(989, 2291, 6, 974, 10177, 969)
+			RestrictElem=false
+			NumMaxElem='1000'
+			RestrictLength=true
+			MaxLength='17.84mm'
+		$end 'Length_Main'
+	$end 'MeshOperations'
+$end 'ConEngineContinueData'

@@ -40,8 +40,8 @@ Qs = q*PoleNumber*Phase;
 SlotPitch = pi*BoreDiameter / Qs; %m
 kFE = 0.96; %Stacking Factor
 ToothFluxDensity = 1.5; %T
-b4 = round(Lprime * SlotPitch * Bpeak / (kFE * AxialLength * ToothFluxDensity),4) * 1e3; %mm
-
+bd = round(Lprime * SlotPitch * Bpeak / (kFE * AxialLength * ToothFluxDensity),4) * 1e3; %mm
+b4 = SlotPitch*1e3 - bd;
 %Windings
 SlotAngle = 2*pi/(Qs/PolePair); %rad
 for i=1:11
@@ -73,6 +73,12 @@ OuterDiameter = BoreDiameter + 2*hys + 2*h4*1e-3; %m
 b1 = round(2*AvailableWireDia); %mm
 h1 = b1/2; %mm
 
+StatorMass = 7700 * AxialLength * (OuterDiameter^2/4 - BoreDiameter^2/4) * pi;
+RotorMass = 7700 * AxialLength * (RotorDiameter^2/4 - 0.25^2/4) * pi;
+kh = 265.1;
+kc = 0.168;
+ke = 6.37;
+CoreLoss = (AxialLength *pi* OuterDiameter^2 /4)*(kh*Freq + kc*Freq^2 + ke*Freq^1.5);
 %% Inductances and Resistances
 Mu0 = 4*pi*1e-7;
 AirGap_mm = AirGap * 1e3; %mm
@@ -86,7 +92,10 @@ Lm_ph = 2*Mu0*BoreDiameter * Lprime * (k_w(1) * Nphase)^2 / (pi * PolePair^2 * A
 Lm_total = Phase * Lm_ph /2; %H
 Lu = Mu0 * Lprime * Nslot^2 *(h4/(3*b4) + h1/4); %H
 Lu_ph = Qs*Lu / (ParallelConductors^2 * Phase); %H
-R_ph = Nphase * (2*AxialLength + 2.8*BoreDiameter + 0.4) /(5.96*1e7 * ParallelConductors * AvailableWireArea *1e-6); %ohm
+R_ph = Nphase * (2*AxialLength + BoreDiameter/PoleNumber*pi*2) /(5.96*1e7 * ParallelConductors * AvailableWireArea *1e-6); %ohm
+CopperLoss = 3*Irms^2*R_ph;
+CopperMass = 3*Nphase*(2*AxialLength + BoreDiameter/PoleNumber*pi*2)*ParallelConductors*AvailableWireArea*1e-6 * 8940;
+
 %% Windings - MMFs
 A = [1 1 0 0 0 0 -1 -1 0 0 0 0];
 B = [0 0 0 0 1 1 0 0 0 0 -1 -1];
